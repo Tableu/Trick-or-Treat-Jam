@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerInput : MonoBehaviour
 {
     private PlayerInputActions _playerInputActions;
     private Vector2 _mouseScreenPosition;

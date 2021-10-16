@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5581650384400495361}
   - component: {fileID: 5581650384400495390}
   - component: {fileID: 5581650384400495360}
-  - component: {fileID: 5581650384400495363}
   m_Layer: 0
   m_Name: Portrait
   m_TagString: Untagged
@@ -98,42 +97,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _img: {fileID: 5581650384400495390}
---- !u!114 &5581650384400495363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5581650384400495391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4bc2a7ce037e6e48886331bbaa787e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characters:
-  - charID: 0
-    expressions:
-    - id: p1Concern
-      sprite: {fileID: 21300000, guid: b4f56bd6568508346b7c9aa50fadbcb4, type: 3}
-    - id: p1Cry
-      sprite: {fileID: 21300000, guid: fdd6821425aa70945ad0ab6186f9a79e, type: 3}
-    - id: p1Fearful
-      sprite: {fileID: 21300000, guid: 70cbdf51361ec944dbcf22bf915ade97, type: 3}
-    - id: p1Neutral
-      sprite: {fileID: 21300000, guid: 474e28266b6cfee4eaedff65825feb1a, type: 3}
-    - id: p1Sob
-      sprite: {fileID: 21300000, guid: 51081414eff882d41bba434ff0a1444b, type: 3}
-    - id: p2Concern
-      sprite: {fileID: 21300000, guid: fbac53a6ba43c7747a763486a6744db1, type: 3}
-    - id: p2Cry
-      sprite: {fileID: 21300000, guid: f47ecc8fe6f72eb4c808521d5bc9a2f9, type: 3}
-    - id: p2Fearful
-      sprite: {fileID: 21300000, guid: 8297c9dda20c7c943b5302d79848af20, type: 3}
-    - id: p2Neutral
-      sprite: {fileID: 21300000, guid: 2640ab7a3f8c2b741b990122544faa50, type: 3}
-    - id: p2ScreamA
-      sprite: {fileID: 21300000, guid: ed7870c9bc3d67b449a3e215eccef90d, type: 3}
-    - id: p2ScreamB
-      sprite: {fileID: 21300000, guid: c18d81cc3d37fc3479d4ae723309d41b, type: 3}
-    - id: p2Sob
-      sprite: {fileID: 21300000, guid: 0b5895a0eec1af34f982fdb596ebe807, type: 3}
