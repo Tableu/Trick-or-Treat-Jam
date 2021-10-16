@@ -9,7 +9,7 @@ public class PortraitController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(FadeSwitch(_img));
+        StartCoroutine(FadeSwitch(PortraitDB.Instance.GetPortrait(Character.Sherry, "p1Concern")));
     }
 
     // Update is called once per frame
