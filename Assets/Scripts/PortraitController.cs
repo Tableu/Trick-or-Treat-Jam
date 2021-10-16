@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PortraitController : MonoBehaviour
 {
-    [SerializeField] private Image _img;
+    [SerializeField] private SpriteRenderer _img;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +34,8 @@ public class PortraitController : MonoBehaviour
         }
     }
 
-    public void Switch(Image img)
+    public void Switch(Sprite sprite)
     {
-        _img = img;
+        _img.sprite = sprite;
     }
 }
