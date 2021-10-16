@@ -9,7 +9,7 @@ public class PortraitController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FadeSwitch(_img));
+        //StartCoroutine(FadeSwitch(_img));
     }
 
     // Update is called once per frame
@@ -19,14 +19,14 @@ public class PortraitController : MonoBehaviour
     }
 
     //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
-    public IEnumerator FadeSwitch(Image img)
+    public IEnumerator FadeSwitch(Sprite sprite)
     {
         for (float i = 1; i >= 0; i -= Time.deltaTime)
         {
             _img.color = new Color(1, 1, 1, i);
             yield return null;
         }
-        _img = img;
+        _img.sprite = sprite;
         for (float i = 0; i <= 1; i += Time.deltaTime)
         {
             _img.color = new Color(1, 1, 1, i);
