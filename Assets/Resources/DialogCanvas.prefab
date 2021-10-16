@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6f75e15506c82341bb718dc49be9f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugDialogToWrite: {fileID: 11400000, guid: 0634d51f5a486754298862e6f66420a1, type: 2}
   showTime: 0.5
   hideTime: 0.5
   isShown: 0
