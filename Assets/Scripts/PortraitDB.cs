@@ -5,14 +5,18 @@ public class PortraitDB : MonoBehaviour
 {
    private static PortraitDB _instance;
    [SerializeField] public List<CharacterExpressions> characters;
+   
    public static PortraitDB Instance
    {
       get
       {
+         if (_instance == null && !FindObjectOfType<PortraitDB>())
+         {
+            _instance = new GameObject("PortraitDB").AddComponent<PortraitDB>();
+         }
          return _instance;
       }
    }
-
    private void Awake()
    {
       if (Instance)
@@ -20,7 +24,7 @@ public class PortraitDB : MonoBehaviour
          Destroy(gameObject);
       }
       _instance = this;
-      DontDestroyOnLoad(gameObject);
+      DontDestroyOnLoad(this);
    }
 
    public Sprite GetPortrait(Character charID, string expression)
