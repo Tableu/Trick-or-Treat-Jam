@@ -45,9 +45,9 @@ public class CharacterExpressions
    public Character charID;
    public List<Expression> expressions;
 
-   public Sprite GetExpression(string ID)
+   public Sprite GetExpression(string id)
    {
-      return expressions.Find(x => x.id == ID).sprite;
+      return expressions.Find(x => x.id == id).sprite;
    }
 }
 [System.Serializable]
