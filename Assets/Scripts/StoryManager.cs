@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StoryManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class StoryManager : MonoBehaviour
         {
             if (_instance == null && !FindObjectOfType<StoryManager>())
             {
-                _instance = new GameObject("SceneNavigationManager").AddComponent<StoryManager>();
+                _instance = new GameObject("StoryManager").AddComponent<StoryManager>();
             }
             return _instance;
         }
