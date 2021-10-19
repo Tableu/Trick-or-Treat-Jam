@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -45,6 +46,9 @@ public class AudioManager : MonoBehaviour
         GameObject soundGameObject = new GameObject($"Sound-{sources.Count}");
         soundGameObject.transform.SetParent(soundContainer.transform);
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+        AudioMixer audioMixer = Resources.Load<AudioMixer>("sfxMixer");
+        AudioMixerGroup[] audioMixGroup = audioMixer.FindMatchingGroups("SFX");
+        audioSource.outputAudioMixerGroup = audioMixGroup[0];
         sources.Add(audioSource);
         return audioSource;
     }
