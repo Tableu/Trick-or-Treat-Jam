@@ -7,6 +7,7 @@ public class AudioAssets : MonoBehaviour
 {
     private static AudioAssets _instance;
 
+    //Loads the AudioAssets prefab
     public static AudioAssets instance
     {
         get
@@ -16,12 +17,12 @@ public class AudioAssets : MonoBehaviour
         }
     }
 
+    //Array that holds all the audioClips (names are found in the enum in SoundManager.cs)
     public SoundAudioClip[] soundAudioClipArray;
     [System.Serializable]
     public class SoundAudioClip
     {
         public AudioManager.Sound sound;
         public AudioClip audioclip;
-        public AudioMixer audioMixer;
     }
 }

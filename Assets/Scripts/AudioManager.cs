@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
         test,
     }
 
+    //Clears any nonexistant audio sources
     public static void ClearNonexistantSources()
     {
         List<AudioSource> activeSources = new List<AudioSource>();
@@ -24,6 +25,7 @@ public class AudioManager : MonoBehaviour
         sources = activeSources;
     }
 
+    //Gets next available audio source
     private static AudioSource GetAvailableAudioSource()
     {
         foreach (AudioSource auSource in sources)
@@ -36,6 +38,7 @@ public class AudioManager : MonoBehaviour
         return AddNewAudioSource();
     }
 
+    //Adds new audio source GameObject with an output to the SFX AudioMixer channel
     private static AudioSource AddNewAudioSource()
     {
         GameObject soundContainer = GameObject.Find("AudioSourceContainer");
@@ -53,6 +56,7 @@ public class AudioManager : MonoBehaviour
         return audioSource;
     }
 
+    //Finds the called sound in AudioAssets
     private static AudioClip GetAudioClip(Sound sound)
     {
         foreach (AudioAssets.SoundAudioClip soundAudioClip in AudioAssets.instance.soundAudioClipArray)
@@ -65,7 +69,7 @@ public class AudioManager : MonoBehaviour
         return null;
     }
 
-
+    //Play the sound
     public static void PlaySound(Sound sound)
     {
         GetAvailableAudioSource().PlayOneShot(GetAudioClip(sound));
