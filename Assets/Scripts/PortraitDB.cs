@@ -31,6 +31,11 @@ public class PortraitDB : MonoBehaviour
    {
       return characters[(int) charID].GetExpression(expression);
    }
+
+   public SpriteRenderer GetSpriteRenderer(Character charID)
+   {
+      return characters[(int) charID].characterSpriteRenderer;
+   }
 }
 
 public enum Character
@@ -43,6 +48,7 @@ public enum Character
 public class CharacterExpressions
 {
    public Character charID;
+   public SpriteRenderer characterSpriteRenderer;
    public List<Expression> expressions;
 
    public Sprite GetExpression(string id)

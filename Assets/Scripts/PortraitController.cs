@@ -1,47 +1,69 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class PortraitController : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer _img;
-
-    private bool switched;
+    [SerializeField] private DialogueRunner dialogueRunner;
+    
     // Start is called before the first frame update
     void Start()
     {
-        switched = false;
+        dialogueRunner.AddCommandHandler("FadeOutPortrait", FadeOutPortrait);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!TransitionManager.Instance.InTransition && !switched)
-        {
-            StartCoroutine(FadeSwitch(PortraitDB.Instance.GetPortrait(Character.Sherry, "p1Neutral")));
-        }
+        
     }
-
+    [YarnCommand("SwitchPortrait")]
+    public void SwitchPortrait(string character, string expression)
+    {
+        Character charEnum = (Character)Enum.Parse(typeof(Character), character);
+        SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
+        img.sprite = PortraitDB.Instance.GetPortrait(charEnum, expression);
+    }
+    
+    [YarnCommand("FadeInPortrait")]
+    public void FadeInPortrait(string character, string expression)
+    {
+        Character charEnum = (Character)Enum.Parse(typeof(Character), character);
+        SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
+        img.sprite = PortraitDB.Instance.GetPortrait(charEnum, expression);
+        img.color = new Color(1, 1, 1, 0);
+        StartCoroutine(FadeIn(img));
+    }
+    
+    public void FadeOutPortrait(string[] parameters, Action onComplete)
+    {
+        StartCoroutine(FadeOut(PortraitDB.Instance.GetSpriteRenderer(Character.Sherry),onComplete));
+        StartCoroutine(FadeOut(PortraitDB.Instance.GetSpriteRenderer(Character.Danny),onComplete));
+        //StartCoroutine(FadeOut(PortraitDB.Instance.GetSpriteRenderer(Character.Policeman),onComplete));
+    }
+    
     //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
-    public IEnumerator FadeSwitch(Sprite sprite)
+    private IEnumerator FadeIn(SpriteRenderer img)
     {
-        switched = true;
-        for (float i = 1; i >= 0; i -= Time.deltaTime)
+        for (float i = 0; i <= 1; i += 4*Time.deltaTime)
         {
-            _img.color = new Color(1, 1, 1, i);
+            img.color = new Color(1, 1, 1, i);
             yield return null;
         }
-        _img.sprite = sprite;
-        for (float i = 0; i <= 1; i += Time.deltaTime)
-        {
-            _img.color = new Color(1, 1, 1, i);
-            yield return null;
-        }
+        img.color = new Color(1, 1, 1, 1);
     }
-
-    public void Switch(Sprite sprite)
+    //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
+    private IEnumerator FadeOut(SpriteRenderer img, Action onComplete)
     {
-        _img.sprite = sprite;
+        for (float i = 1; i >= 0; i -= 4*Time.deltaTime)
+        {
+            img.color = new Color(1, 1, 1, i);
+            yield return null;
+        }
+        img.color = new Color(1, 1, 1, 0);
+        onComplete();
     }
 }

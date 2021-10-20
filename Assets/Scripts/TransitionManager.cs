@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
+using Yarn.Unity;
 using Button = UnityEngine.UI.Button;
 using Image = UnityEngine.UI.Image;
 
@@ -11,12 +11,11 @@ public class TransitionManager : MonoBehaviour
 {
     [SerializeField] private Text text;
     [SerializeField] private string soundDisclaimer;
+    [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private string warning;
     [SerializeField] private Image img;
     [SerializeField] private Button button;
     [SerializeField] private Canvas canvas;
-
-    public bool InTransition { get; set; }
 
     private static TransitionManager _instance;
     public static TransitionManager Instance
@@ -42,7 +41,6 @@ public class TransitionManager : MonoBehaviour
     }
     private void Start()
     {
-        InTransition = false;
         if (SceneManager.GetActiveScene().name == "Main Menu")
         {
             StartCoroutine(FadeInMainMenu());
@@ -52,7 +50,6 @@ public class TransitionManager : MonoBehaviour
 
     public IEnumerator FadeInMainMenu()
     {
-        InTransition = true;
         button.gameObject.SetActive(true);
         text.gameObject.SetActive(true);
         for (float i = 0; i <= 1; i += Time.deltaTime)
@@ -87,7 +84,6 @@ public class TransitionManager : MonoBehaviour
         }
         img.gameObject.SetActive(false);
         text.gameObject.SetActive(false);
-        InTransition = false;
     }
 
     public void GoToRoomScene()
@@ -101,30 +97,28 @@ public class TransitionManager : MonoBehaviour
         
         yield return StartCoroutine(BlackFadeOut(img));
         SceneManager.LoadScene("Scenes/Room Scene");
-        yield return StartCoroutine(BlackFadeIn(img));
-        InTransition = false;
+        Action action = new Action(delegate { dialogueRunner.StartDialogue();});
+        StartCoroutine(BlackFadeIn(img,action));
+        //yield return StartCoroutine(BlackFadeIn(img, null));
     }
-    public IEnumerator BlackFadeIn(Image img)
+    public IEnumerator BlackFadeIn(Image img, Action callback)
     {
-        InTransition = true;
         img.color = new Color(0, 0, 0, 1);
         for (float i = 1; i >= 0; i -= Time.deltaTime)
         {
             img.color = new Color(0, 0, 0, i);
             yield return null;
         }
-        InTransition = false;
+        callback();
     }
 
     public IEnumerator BlackFadeOut(Image img)
     {
-        InTransition = true;
         img.color = new Color(0, 0, 0, 0);
         for (float i = 0; i <= 1; i += Time.deltaTime)
         {
             img.color = new Color(0, 0, 0, i);
             yield return null;
         }
-        InTransition = false;
     }
 }
