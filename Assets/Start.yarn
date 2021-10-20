@@ -1,0 +1,14 @@
+title: Start
+tags: 
+colorID: 0
+position: -72,160
+---
+<<FadeInPortrait PortraitDB Sherry p1Concern>>Sherry: I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
+I really don’t know where they went.
+No, no…I already tried finding them near the str-
+<<FadeInPortrait PortraitDB Danny p1Cry>>
+<<SwitchPortrait PortraitDB Sherry p1Fearful>>Sherry: Danny! I was so scared- where were you?! I… 
+What happened…who did this to you?
+<<SwitchPortrait PortraitDB Sherry p1Cry>>Danny: …
+<<FadeOutPortrait PortraitDB>>
+===
