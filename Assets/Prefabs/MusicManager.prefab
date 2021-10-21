@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4684148724860892941}
   - component: {fileID: 3895168867584645901}
   m_Layer: 0
-  m_Name: DontDestroyMusic
+  m_Name: MusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

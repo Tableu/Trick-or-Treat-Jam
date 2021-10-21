@@ -917,52 +917,72 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].charID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.size
-      value: 12
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].expressions.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].characterSpriteRenderer
       value: 
       objectReference: {fileID: 1153762334}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].characterSpriteRenderer
+      value: 
+      objectReference: {fileID: 1153762334}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[0].id
-      value: p1Concern
+      value: BloodyCrying
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[1].id
-      value: p1Cry
+      value: BloodyFearful
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[2].id
-      value: p1Fearful
+      value: BloodyFearfulTear
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[3].id
-      value: p1Neutral
+      value: BloodyNeutral
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[4].id
-      value: p1Sob
+      value: Crying
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[5].id
-      value: p2Concern
+      value: Fearful
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[6].id
-      value: p2Cry
+      value: FearfulTear
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[7].id
-      value: p2Fearful
+      value: Neutral
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[8].id
-      value: p2Neutral
+      value: Neutral
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[9].id
       value: p2ScreamA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].expressions.Array.data[0].id
+      value: BloodyCrying
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].expressions.Array.data[1].id
+      value: BloodyFearful
       objectReference: {fileID: 0}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[10].id
@@ -975,43 +995,51 @@ PrefabInstance:
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[0].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b4f56bd6568508346b7c9aa50fadbcb4, type: 3}
+      objectReference: {fileID: 21300000, guid: 5d9f291aab5b79f40961c8e8af6ce18c, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[1].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fdd6821425aa70945ad0ab6186f9a79e, type: 3}
+      objectReference: {fileID: 21300000, guid: 9185e22dbfa71b74f8fab575c6a5fe7f, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[2].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 70cbdf51361ec944dbcf22bf915ade97, type: 3}
+      objectReference: {fileID: 21300000, guid: 2864f1a33841fcc48b1fdeb9aac01146, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[3].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 474e28266b6cfee4eaedff65825feb1a, type: 3}
+      objectReference: {fileID: 21300000, guid: e57c6d342d8e0fc4c88f483dd493fd58, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[4].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 51081414eff882d41bba434ff0a1444b, type: 3}
+      objectReference: {fileID: 21300000, guid: 3bbc8b1a0a75a814ea17f3d41e3230ae, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[5].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fbac53a6ba43c7747a763486a6744db1, type: 3}
+      objectReference: {fileID: 21300000, guid: fb3dc6d8334697040824e1154a086d09, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[6].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f47ecc8fe6f72eb4c808521d5bc9a2f9, type: 3}
+      objectReference: {fileID: 21300000, guid: 4b70383f64c2c8641845c8d3f7e8f28a, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[7].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8297c9dda20c7c943b5302d79848af20, type: 3}
+      objectReference: {fileID: 21300000, guid: 78c6df81ca40dc64a832f2517b4cbaa1, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[8].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2640ab7a3f8c2b741b990122544faa50, type: 3}
+      objectReference: {fileID: 21300000, guid: 78c6df81ca40dc64a832f2517b4cbaa1, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[9].sprite
       value: 
       objectReference: {fileID: 21300000, guid: ed7870c9bc3d67b449a3e215eccef90d, type: 3}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].expressions.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d9f291aab5b79f40961c8e8af6ce18c, type: 3}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[2].expressions.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9185e22dbfa71b74f8fab575c6a5fe7f, type: 3}
     - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: characters.Array.data[1].expressions.Array.data[10].sprite
       value: 
