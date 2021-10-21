@@ -1,10 +1,10 @@
 title: Start
 tags: 
-colorID: 0
-position: -72,160
+colorID: 8
+position: -142,159
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>>Sherry: I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
-I really don’t know where they went.
+<<FadeInPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager LivingRoomDay>>Sherry: I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
+<<PlaySound AudioAssets test>>I really don’t know where they went.
 No, no…I already tried finding them near the str-
 <<FadeInPortrait PortraitDB Danny p1Cry>>
 <<SwitchPortrait PortraitDB Sherry p1Fearful>>Sherry: Danny! I was so scared- where were you?! I… 

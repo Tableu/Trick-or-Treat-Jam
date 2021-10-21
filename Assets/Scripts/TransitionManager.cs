@@ -94,7 +94,6 @@ public class TransitionManager : MonoBehaviour
     }
     private IEnumerator MenuToRoomTransition()
     {
-        
         yield return StartCoroutine(BlackFadeOut(img));
         SceneManager.LoadScene("Scenes/Room Scene");
         Action action = new Action(delegate { dialogueRunner.StartDialogue();});

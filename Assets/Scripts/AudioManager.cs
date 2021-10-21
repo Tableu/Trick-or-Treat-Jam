@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using Yarn.Unity;
 
 public class AudioManager : MonoBehaviour
 {
@@ -59,7 +61,7 @@ public class AudioManager : MonoBehaviour
     //Finds the called sound in AudioAssets
     private static AudioClip GetAudioClip(Sound sound)
     {
-        foreach (AudioAssets.SoundAudioClip soundAudioClip in AudioAssets.instance.soundAudioClipArray)
+        foreach (AudioAssets.SoundAudioClip soundAudioClip in AudioAssets.Instance.soundAudioClipArray)
         {
             if (soundAudioClip.sound == sound)
             {
@@ -69,9 +71,11 @@ public class AudioManager : MonoBehaviour
         return null;
     }
 
+    [YarnCommand("PlaySound")]
     //Play the sound
-    public static void PlaySound(Sound sound)
+    public static void PlaySound(string soundName)
     {
+        Sound sound = (Sound)Enum.Parse(typeof(Sound), soundName);
         GetAvailableAudioSource().PlayOneShot(GetAudioClip(sound));
     }
 }

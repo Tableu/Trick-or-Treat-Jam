@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 public class MusicManager : MonoBehaviour
 {
@@ -9,6 +11,12 @@ public class MusicManager : MonoBehaviour
     public AudioClip[] musicClips;
     public AudioSource musicSrc;
 
+    public enum Music
+    {
+        PumpkinMansOtherworld = 0,
+        MementoMoriTitle = 1,
+        LivingRoomDay = 2
+    }
     // Don't destroy gameobject
     void Awake()
     {
@@ -20,25 +28,19 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         musicSrc = GetComponent<AudioSource>();
-        PlayMusic(SceneManager.GetActiveScene().buildIndex);
+        PlayMusic("MementoMoriTitle");
     }
 
-    //OnLevelWasLoaded only works for scene changes
-    //AFTER game is first loaded.
-    //This will play any further scene changes.
-    private void OnLevelWasLoaded(int levelIndex)
-    {
-        PlayMusic(levelIndex);
-    }
-
+    [YarnCommand("PlayMusic")]
     //Plays music track according to level index
-    void PlayMusic(int songToChangeTo)
+    public void PlayMusic(string songToChangeTo)
     {
         
-        AudioClip levelMusic = musicClips[songToChangeTo];
+        int index = (int)Enum.Parse(typeof(Music), songToChangeTo);
+        AudioClip levelMusic = musicClips[index];
         if (levelMusic)
         {
-            musicSrc.clip = musicClips[songToChangeTo];
+            musicSrc.clip = musicClips[index];
             musicSrc.loop = true;
             musicSrc.Play();
         }
