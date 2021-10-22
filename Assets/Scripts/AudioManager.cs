@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     public enum Sound
     {
         test,
+        Button
     }
 
     //Clears any nonexistant audio sources

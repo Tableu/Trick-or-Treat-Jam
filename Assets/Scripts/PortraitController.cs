@@ -13,6 +13,7 @@ public class PortraitController : MonoBehaviour
     void Start()
     {
         dialogueRunner.AddCommandHandler("FadeOutPortrait", FadeOutPortrait);
+        dialogueRunner.AddCommandHandler("FadeInPortrait", FadeInPortrait);
     }
 
     // Update is called once per frame
@@ -28,14 +29,15 @@ public class PortraitController : MonoBehaviour
         img.sprite = PortraitDB.Instance.GetPortrait(charEnum, expression);
     }
     
-    [YarnCommand("FadeInPortrait")]
-    public void FadeInPortrait(string character, string expression)
+    public void FadeInPortrait(string[] parameters, Action onComplete)
     {
+        string character = parameters[1];
+        string expression = parameters[2];
         Character charEnum = (Character)Enum.Parse(typeof(Character), character);
         SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
         img.sprite = PortraitDB.Instance.GetPortrait(charEnum, expression);
         img.color = new Color(1, 1, 1, 0);
-        StartCoroutine(FadeIn(img));
+        StartCoroutine(FadeIn(img, onComplete));
     }
     
     public void FadeOutPortrait(string[] parameters, Action onComplete)
@@ -46,7 +48,7 @@ public class PortraitController : MonoBehaviour
     }
     
     //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
-    private IEnumerator FadeIn(SpriteRenderer img)
+    private IEnumerator FadeIn(SpriteRenderer img, Action onComplete)
     {
         for (float i = 0; i <= 1; i += 4*Time.deltaTime)
         {
@@ -54,6 +56,7 @@ public class PortraitController : MonoBehaviour
             yield return null;
         }
         img.color = new Color(1, 1, 1, 1);
+        onComplete();
     }
     //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
     private IEnumerator FadeOut(SpriteRenderer img, Action onComplete)

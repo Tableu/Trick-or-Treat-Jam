@@ -45,6 +45,7 @@ public class TransitionManager : MonoBehaviour
         {
             StartCoroutine(FadeInMainMenu());
         }
+        dialogueRunner.AddCommandHandler("RoomToRoomTransition", RoomToRoomTransition);
     }
     
 
@@ -94,12 +95,17 @@ public class TransitionManager : MonoBehaviour
     }
     private IEnumerator MenuToRoomTransition()
     {
-        yield return StartCoroutine(BlackFadeOut(img));
-        SceneManager.LoadScene("Scenes/Room Scene");
-        Action action = new Action(delegate { dialogueRunner.StartDialogue();});
-        StartCoroutine(BlackFadeIn(img,action));
-        //yield return StartCoroutine(BlackFadeIn(img, null));
+        yield return StartCoroutine(BlackFadeOut(img, delegate {SceneManager.LoadScene("Scenes/Room Scene");}));
+        StartCoroutine(BlackFadeIn(img,delegate { dialogueRunner.StartDialogue(); }));
     }
+    private void RoomToRoomTransition(string[] parameters, Action onComplete)
+    {
+        StartCoroutine(BlackFadeOut(img, delegate
+        {
+            StartCoroutine(BlackFadeIn(img, onComplete));
+        }));
+    }
+    
     public IEnumerator BlackFadeIn(Image img, Action callback)
     {
         img.color = new Color(0, 0, 0, 1);
@@ -108,10 +114,11 @@ public class TransitionManager : MonoBehaviour
             img.color = new Color(0, 0, 0, i);
             yield return null;
         }
+        Debug.Log("BlackFadeIn");
         callback();
     }
 
-    public IEnumerator BlackFadeOut(Image img)
+    public IEnumerator BlackFadeOut(Image img, Action callback)
     {
         img.color = new Color(0, 0, 0, 0);
         for (float i = 0; i <= 1; i += Time.deltaTime)
@@ -119,5 +126,7 @@ public class TransitionManager : MonoBehaviour
             img.color = new Color(0, 0, 0, i);
             yield return null;
         }
+        Debug.Log("BlackFadeOut");
+        callback();
     }
 }
