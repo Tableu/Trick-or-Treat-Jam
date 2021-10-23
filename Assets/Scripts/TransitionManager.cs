@@ -100,6 +100,7 @@ public class TransitionManager : MonoBehaviour
     }
     private void RoomToRoomTransition(string[] parameters, Action onComplete)
     {
+        dialogueRunner.dialogueUI.DialogueComplete();
         StartCoroutine(BlackFadeOut(img, delegate
         {
             StartCoroutine(BlackFadeIn(img, onComplete));

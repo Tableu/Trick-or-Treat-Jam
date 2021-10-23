@@ -1,0 +1,25 @@
+title: Start
+tags: 
+colorID: 1
+position: -610,-142
+---
+<<FadeInPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager Silence>>Sherry: I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
+I really don’t know where they went.
+No, no…I already tried finding them near the str-
+<<FadeInPortrait PortraitDB Danny Crying>><<AnimateSpeaker PortraitDB Sherry>>
+<<SwitchPortrait PortraitDB Sherry p1Fearful>><<PlayMusic MusicManager DannysAgony>>Sherry: Danny! I was so scared- where were you?! I… 
+What happened…who did this to you?
+<<AnimateSpeaker PortraitDB Danny>>Danny: …
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager>>[[Danny'sRoom/Night]]
+===
+title: Danny'sRoom/Night
+tags: 
+colorID: 0
+position: -127,112
+---
+<<FadeInPortrait PortraitDB Sherry p1Concern>><<FadeInPortrait PortraitDB Danny Neutral>><<PlayMusic MusicManager DannysRoom>>Sherry: Danny...
+Danny: ...
+<<SwitchPortrait PortraitDB Sherry p1Neutral>>Sherry: I will... clean this up
+<<FadeOutAllPortraits PortraitDB>>
+===

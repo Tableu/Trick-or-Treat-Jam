@@ -8,10 +8,12 @@ using Yarn.Unity;
 public class MusicManager : MonoBehaviour
 {
     //Music source and tracks
-    public AudioClip[] musicClips;
+    public List<MusicTrack> musicClips;
     public AudioSource musicSrc;
+    public AudioSource motiveSrc;
 
-    public enum Music
+    private bool isPlayingMotive = false;
+    public enum Track
     {
         MementoMoriTitle,
         PumpkinMansBreath,
@@ -37,19 +39,52 @@ public class MusicManager : MonoBehaviour
         PlayMusic("MementoMoriTitle");
     }
 
+    void Update()
+    {
+        if (isPlayingMotive && !motiveSrc.isPlaying)
+        {
+            musicSrc.UnPause();
+            isPlayingMotive = false;
+        }
+    }
     [YarnCommand("PlayMusic")]
     //Plays music track according to level index
     public void PlayMusic(string songToChangeTo)
     {
         
-        int index = (int)Enum.Parse(typeof(Music), songToChangeTo);
-        AudioClip levelMusic = musicClips[index];
+        int index = (int)Enum.Parse(typeof(Track), songToChangeTo);
+        AudioClip levelMusic = musicClips[index].audioClip;
         if (levelMusic)
         {
-            musicSrc.clip = musicClips[index];
-            musicSrc.loop = true;
-            musicSrc.Play();
+            if (musicClips[index].loop)
+            {
+                musicSrc.clip = musicClips[index].audioClip;
+                musicSrc.loop = musicClips[index].loop;
+                musicSrc.Play();
+            }
+            else
+            {
+                musicSrc.Pause();
+                motiveSrc.clip = musicClips[index].audioClip;
+                motiveSrc.loop = false;
+                motiveSrc.Play();
+                isPlayingMotive = true;
+            }
         }
         Debug.Log("Playing song: " + songToChangeTo);
     }
+
+    [YarnCommand("StopMusic")]
+    public void StopMusic()
+    {
+        musicSrc.Stop();
+    }
+}
+
+[System.Serializable]
+public class MusicTrack
+{
+    public bool loop;
+    public AudioClip audioClip;
+    public MusicManager.Track track;
 }
