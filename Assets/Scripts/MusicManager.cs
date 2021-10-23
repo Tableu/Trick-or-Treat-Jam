@@ -13,9 +13,15 @@ public class MusicManager : MonoBehaviour
 
     public enum Music
     {
-        PumpkinMansOtherworld = 0,
-        MementoMoriTitle = 1,
-        LivingRoomDay = 2
+        MementoMoriTitle,
+        PumpkinMansBreath,
+        LivingRoomDay,
+        DannysAgony,
+        DannysRoom,
+        HelpfulClue2,
+        SherrysFear,
+        SherrysPain,
+        Silence
     }
     // Don't destroy gameobject
     void Awake()
