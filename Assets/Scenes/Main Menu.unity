@@ -696,7 +696,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7785467, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1141,6 +1141,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 64310011411d0ae4c8ea8496c34e414d, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 516a8efbe67249e47ae4f2cd36fd382c, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e833a73c2f18b5498da796aafaeda76, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: c73538b92dd3dfe41b32a2c6de45ccfd, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 595ee17f1b22148488575e9f391c24e0, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c80b4d5b81973f4db415238697db47a, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b5e5e825ff6b124c9703cb85f11bfc1, type: 3}
+    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
+      propertyPath: musicClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 46b483f5fb730bc48b99b447d799b306, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
 --- !u!1 &1897318469
