@@ -73,6 +73,21 @@ MonoBehaviour:
   - loop: 1
     audioClip: {fileID: 8300000, guid: 46b483f5fb730bc48b99b447d799b306, type: 3}
     track: 8
+  - loop: 0
+    audioClip: {fileID: 8300000, guid: 3370cf209e9ad8244afc3b2b83d5334e, type: 3}
+    track: 9
+  - loop: 0
+    audioClip: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
+    track: 10
+  - loop: 1
+    audioClip: {fileID: 8300000, guid: e230ef6ca0c559946a72c23fd3819c59, type: 3}
+    track: 11
+  - loop: 1
+    audioClip: {fileID: 8300000, guid: a2bd1b6596c8f5e42b0de508f3102cb4, type: 3}
+    track: 12
+  - loop: 0
+    audioClip: {fileID: 8300000, guid: 1f0be63021b1b9e4f97a7872646b133e, type: 3}
+    track: 13
   musicSrc: {fileID: 3895168867584645901}
   motiveSrc: {fileID: 7097099665063897812}
 --- !u!82 &3895168867584645901

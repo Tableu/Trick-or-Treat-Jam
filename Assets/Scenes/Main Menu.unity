@@ -900,66 +900,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[9].loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[11].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[12].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[13].loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[9].track
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[10].track
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[11].track
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[12].track
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[13].track
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[9].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3370cf209e9ad8244afc3b2b83d5334e, type: 3}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[10].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[11].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[12].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: a2bd1b6596c8f5e42b0de508f3102cb4, type: 3}
-    - target: {fileID: 4684148724860892941, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
-      propertyPath: musicClips.Array.data[13].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1f0be63021b1b9e4f97a7872646b133e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c4f2efea79b73341a8f89ace069a499, type: 3}
 --- !u!1 &1897318469
@@ -1100,22 +1040,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6656845474792410613, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: yarnScripts.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6656845474792410613, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: yarnScripts.Array.data[0]
-      value: 
-      objectReference: {fileID: 2480198943629176163, guid: d038e7574ae0b064eac93ccf4eed4aa3, type: 3}
-    - target: {fileID: 6656845474792410613, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: yarnScripts.Array.data[2]
-      value: 
-      objectReference: {fileID: 2480198943629176163, guid: 8bb8d03269b0ef545adc6e967a1f4cb3, type: 3}
-    - target: {fileID: 6656845474792410613, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: yarnScripts.Array.data[3]
-      value: 
-      objectReference: {fileID: 2480198943629176163, guid: 1635d37d962267742a05dec241a99ea4, type: 3}
     - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: dialogueContainer
       value: 
@@ -1208,30 +1132,6 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 425781711}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.data[6]
-      value: 
-      objectReference: {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
     - target: {fileID: 6656845475574131793, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: m_Name
       value: TransitionManager
