@@ -367,6 +367,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7004138444726282952}
+        m_TargetAssemblyTypeName: MenuAudioManager, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6520498170228034894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiSrc: {fileID: 3414664857185272010}
-  uiClick: {fileID: 8300000, guid: 5e449cea68924114fa48ba12b182674f, type: 3}
+  uiClick: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
   uiHover: {fileID: 8300000, guid: 5e449cea68924114fa48ba12b182674f, type: 3}
   uiBack: {fileID: 8300000, guid: 5e449cea68924114fa48ba12b182674f, type: 3}
 --- !u!82 &3414664857185272010
@@ -759,6 +771,10 @@ PrefabInstance:
     - target: {fileID: 8267124592686283475, guid: 1b59d4d729c72e04babe2ef0215a8987, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267124594474034098, guid: 1b59d4d729c72e04babe2ef0215a8987, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8267124592686283479, guid: 1b59d4d729c72e04babe2ef0215a8987, type: 3}

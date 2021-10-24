@@ -23,7 +23,12 @@ public class MusicManager : MonoBehaviour
         HelpfulClue2,
         SherrysFear,
         SherrysPain,
-        Silence
+        Silence,
+        PumpkinManSpeaks,
+        PlayMotive,
+        LivingRoomNight,
+        DannyIsGone,
+        TerrifyingClue
     }
     // Don't destroy gameobject
     void Awake()

@@ -3,21 +3,21 @@ tags:
 colorID: 1
 position: -1354,-484
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>> Sherry: Say, Danny. Do you want to hold Mr. Tableu to go to sleep?
-<<FadeInPortrait PortraitDB Danny Neutral>>Danny: ...
-Sherry: I will take that as a no.
-<<FadeOutPortrait PortraitDB>>
+<<FadeInPortrait PortraitDB Sherry p1Concern>>Say, Danny. Do you want to hold Mr. Tableu to go to sleep?
+<<FadeInPortrait PortraitDB Danny Neutral>>...
+I will take that as a no.
+<<FadeOutAllPortraits PortraitDB>>
 ===
 title: Danny'sDrawings
 tags: 
 colorID: 0
 position: -1122,-484
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>> Danny, do you want to talk to mommy about what happened? 
+<<FadeInPortrait PortraitDB Sherry p1Concern>>Danny, do you want to talk to mommy about what happened? 
 You didn’t say a single word to the nice policeman who came over. Is there anything you want to tell mommy in private?
-<<FadeInPortrait PortraitDB Danny Neutral>>Danny: ...
-Sherry: Please Danny. Say anything.
-<<FadeOutPortrait PortraitDB>>
+<<FadeInPortrait PortraitDB Danny Neutral>>...
+Please Danny. Say anything.
+<<FadeOutAllPortraits PortraitDB>>
 ===
 title: TableLamp
 tags: 
@@ -25,16 +25,16 @@ colorID: 0
 position: -845,-293
 ---
 <<if $clicked_lamp is 0>>
-    <<FadeInPortrait PortraitDB Sherry p1Concern>> I'm going to turn off the lights.
-    <<FadeInPortrait PortraitDB Danny Fearful>><<PlayMusic MusicManager DannysAgony>><<wait 1>>Danny: NOOO!!!!!
-    <<PlayMusic MusicManager DannysRoom>>Sherry: Danny...
-    Danny: ...
-    Sherry: Ok, I'll keep them on.
+    <<FadeInPortrait PortraitDB Sherry p1Concern>>I'm going to turn off the lights.
+    <<FadeInPortrait PortraitDB Danny Fearful>><<PlayMusic MusicManager DannysAgony>><<wait 1>>NOOO!!!!!
+    <<PlayMusic MusicManager DannysRoom>>Danny...
+    ...
+    Ok, I'll keep them on.
     <<set $clicked_lamp to 1>>
-    <<FadeOutPortrait PortraitDB>>
+    <<FadeOutAllPortraits PortraitDB>>
 <<else>>
-    <<FadeInPortrait PortraitDB Sherry p1Concern>> He is not in a good state right now. Better not to do anything that will irritate him.
-    <<FadeOutPortrait PortraitDB>>
+    <<FadeInPortrait PortraitDB Sherry p1Concern>>He is not in a good state right now. Better not to do anything that will irritate him.
+    <<FadeOutAllPortraits PortraitDB>>
 <<endif>>
 ===
 title: TalkToDanny
@@ -42,17 +42,17 @@ tags:
 colorID: 0
 position: -576,-430
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>>Sherry: Danny, let's go to sleep.
-<<FadeInPortrait PortraitDB Danny Fearful>>Danny: He left me alive, but he will come for me.
-Sherry: What?
-<<PlayMusic MusicManager SherrysFear>>Danny: When we first saw him, we actually laughed. He looked goofy with a pumpkin on his head, but then…
+<<FadeInPortrait PortraitDB Sherry p1Concern>>Danny, let's go to sleep.
+<<FadeInPortrait PortraitDB Danny Fearful>>He left me alive, but he will come for me.
+What?
+<<PlayMusic MusicManager SherrysFear>>When we first saw him, we actually laughed. He looked goofy with a pumpkin on his head, but then…
 …he changed shape. Ronald was screaming, “Werewolf! Werewolf!”… Sonny just screamed, “No, no, Nosferatu!” and started dashing away. I didn’t know what they meant.
 I saw…you.
 <<SwitchPortrait PortraitDB Danny FearfulTear>>He turned into a shape of you, and you were hurt. You were bleeding.
-Sherry: Danny...
-Danny: When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
-Sherry: I won't let anythin-
-<<SwitchPortrait PortraitDB Danny Crying>>Danny: I don't want to die. I DON'T WANT TO DIE!!!
-<<FadeOutPortrait PortraitDB>>
-<<RoomToRoomTransition TransitionManager>>
+Danny...
+When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
+I won't let anythin-
+<<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager DannysRoomMorning>>[[DannysBedroomEarlyMorning]]
 ===

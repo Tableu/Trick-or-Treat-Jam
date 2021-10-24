@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,11 +12,24 @@ public class TransitionManager : MonoBehaviour
 {
     [SerializeField] private Text text;
     [SerializeField] private string soundDisclaimer;
-    [SerializeField] private DialogueRunner dialogueRunner;
+    public DialogueRunner dialogueRunner;
     [SerializeField] private string warning;
     [SerializeField] private Image img;
     [SerializeField] private Button button;
     [SerializeField] private Canvas canvas;
+    [SerializeField] private List<GameObject> roomPrefabs;
+    private GameObject _room;
+
+    public enum Room
+    {
+        DannysRoomNight,
+        DannysRoomDay,
+        DannysRoomMorning,
+        LivingRoomMorning,
+        LivingRoomNight,
+        DannysRoomNight2,
+        LivingRoomNight2
+    }
 
     private static TransitionManager _instance;
     public static TransitionManager Instance
@@ -93,17 +107,43 @@ public class TransitionManager : MonoBehaviour
         img.gameObject.SetActive(true);
         StartCoroutine(MenuToRoomTransition());
     }
+    [YarnCommand("LoadRoom")]
+    public void LoadRoom(string room)
+    {
+        Room roomEnum;
+        Debug.Log(room);
+        if (Room.TryParse(room, out roomEnum))
+        {
+            if(_room != null)
+                Destroy(_room);
+            _room = Instantiate(roomPrefabs[(int)roomEnum]);
+            Debug.Log("RoomLoaded");
+        }
+    }
     private IEnumerator MenuToRoomTransition()
     {
-        yield return StartCoroutine(BlackFadeOut(img, delegate {SceneManager.LoadScene("Scenes/Room Scene");}));
-        StartCoroutine(BlackFadeIn(img,delegate { dialogueRunner.StartDialogue(); }));
+        yield return StartCoroutine(BlackFadeOut(img, delegate 
+        {
+            SceneManager.LoadScene("Scenes/Room Scene");
+        }));
+        StartCoroutine(BlackFadeIn(img, delegate
+        {
+            _room = GameObject.Find("TestRoom");
+            dialogueRunner.StartDialogue();
+        }));
     }
     private void RoomToRoomTransition(string[] parameters, Action onComplete)
     {
         dialogueRunner.dialogueUI.DialogueComplete();
+        img.gameObject.SetActive(true);
         StartCoroutine(BlackFadeOut(img, delegate
         {
-            StartCoroutine(BlackFadeIn(img, onComplete));
+            LoadRoom(parameters[1]);
+            StartCoroutine(BlackFadeIn(img, delegate
+            {
+                img.gameObject.SetActive(false);
+                onComplete();
+            }));
         }));
     }
     

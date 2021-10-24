@@ -365,3 +365,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 0}
+  fadedColor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
