@@ -1,25 +1,25 @@
 title: Start
 tags: 
 colorID: 0
-position: -749,-174
+position: -1331,-284
 ---
 <<LoadRoom TransitionManager DannysRoomDay>>
 <<FadeInPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager Silence>>I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
 I really don’t know where they went.
 No, no…I already tried finding them near the str-
-<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Danny Crying>>
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Danny BloodyFearfulTear>>
 <<SwitchPortrait PortraitDB Sherry p1Fearful>><<PlayMusic MusicManager DannysAgony>>Danny! I was so scared- where were you?! I… 
-What happened…who did this to you?
-<<AnimateSpeaker PortraitDB Danny>>...
+<<SwitchPortrait PortraitDB Sherry p1Sob>>What happened…who did this to you?
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny BloodyCrying>>...
 <<FadeOutAllPortraits PortraitDB>>
 <<RoomToRoomTransition TransitionManager DannysRoomNight>>[[Danny'sRoom/Night]]
 ===
 title: Danny'sRoom/Night
 tags: 
 colorID: 0
-position: -629,-395
+position: -629,-396
 ---
-<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<FadeInPortrait PortraitDB Danny Neutral>><<PlayMusic MusicManager DannysRoom>>Danny...
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<FadeInPortrait PortraitDB Danny Fearful>><<PlayMusic MusicManager DannysRoom>>Danny...
 <<AnimateSpeaker PortraitDB Danny>>...
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Neutral>>I will... clean this up
 <<FadeOutAllPortraits PortraitDB>>

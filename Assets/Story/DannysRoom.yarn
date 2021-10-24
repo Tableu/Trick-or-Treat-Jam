@@ -3,9 +3,9 @@ tags:
 colorID: 1
 position: -1354,-484
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>>Say, Danny. Do you want to hold Mr. Tableu to go to sleep?
-<<FadeInPortrait PortraitDB Danny Neutral>>...
-I will take that as a no.
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Neutral>>Say, Danny. Do you want to hold Mr. Tableu to go to sleep?
+<<AnimateSpeaker PortraitDB Danny>><<FadeInPortrait PortraitDB Danny Neutral>>...
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>I will take that as a no.
 <<FadeOutAllPortraits PortraitDB>>
 ===
 title: Danny'sDrawings
@@ -13,10 +13,10 @@ tags:
 colorID: 0
 position: -1122,-484
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>>Danny, do you want to talk to mommy about what happened? 
-You didn’t say a single word to the nice policeman who came over. Is there anything you want to tell mommy in private?
-<<FadeInPortrait PortraitDB Danny Neutral>>...
-Please Danny. Say anything.
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Neutral>>Danny, do you want to talk to mommy about what happened? 
+<<SwitchPortrait PortraitDB Sherry p1Concern>>You didn’t say a single word to the nice policeman who came over. Is there anything you want to tell mommy in private?
+<<AnimateSpeaker PortraitDB Danny>><<FadeInPortrait PortraitDB Danny Neutral>>...
+<<AnimateSpeaker PortraitDB Sherry>>Please Danny. Say anything.
 <<FadeOutAllPortraits PortraitDB>>
 ===
 title: TableLamp
@@ -25,11 +25,11 @@ colorID: 0
 position: -845,-293
 ---
 <<if $clicked_lamp is 0>>
-    <<FadeInPortrait PortraitDB Sherry p1Concern>>I'm going to turn off the lights.
-    <<FadeInPortrait PortraitDB Danny Fearful>><<PlayMusic MusicManager DannysAgony>><<wait 1>>NOOO!!!!!
-    <<PlayMusic MusicManager DannysRoom>>Danny...
+    <<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Neutral>>I'm going to turn off the lights.
+    <<AnimateSpeaker PortraitDB Danny>><<FadeInPortrait PortraitDB Danny Fearful>><<PlayMusic MusicManager DannysAgony>><<wait 1>>NOOO!!!!!
+    <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager DannysRoom>>Danny...
     ...
-    Ok, I'll keep them on.
+    <<SwitchPortrait PortraitDB Sherry p1Neutral>>Ok, I'll keep them on.
     <<set $clicked_lamp to 1>>
     <<FadeOutAllPortraits PortraitDB>>
 <<else>>
@@ -42,17 +42,17 @@ tags:
 colorID: 0
 position: -576,-430
 ---
-<<FadeInPortrait PortraitDB Sherry p1Concern>>Danny, let's go to sleep.
-<<FadeInPortrait PortraitDB Danny Fearful>>He left me alive, but he will come for me.
-What?
-<<PlayMusic MusicManager SherrysFear>>When we first saw him, we actually laughed. He looked goofy with a pumpkin on his head, but then…
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Neutral>>Danny, let's go to sleep.
+<<AnimateSpeaker PortraitDB Danny>><<FadeInPortrait PortraitDB Danny Fearful>>He left me alive, but he will come for me.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>What?
+<<AnimateSpeaker PortraitDB Danny>><<PlayMusic MusicManager SherrysFear>>When we first saw him, we actually laughed. He looked goofy with a pumpkin on his head, but then…
 …he changed shape. Ronald was screaming, “Werewolf! Werewolf!”… Sonny just screamed, “No, no, Nosferatu!” and started dashing away. I didn’t know what they meant.
 I saw…you.
 <<SwitchPortrait PortraitDB Danny FearfulTear>>He turned into a shape of you, and you were hurt. You were bleeding.
-Danny...
-When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
-I won't let anythin-
-<<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Fearful>>Danny...
+<<AnimateSpeaker PortraitDB Danny>>When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>I won't let anythin-
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
 <<FadeOutAllPortraits PortraitDB>>
 <<RoomToRoomTransition TransitionManager DannysRoomMorning>>[[DannysBedroomEarlyMorning]]
 ===

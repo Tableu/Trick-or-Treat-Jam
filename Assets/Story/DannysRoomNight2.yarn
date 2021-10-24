@@ -31,7 +31,7 @@ position: -1688,-777
 <<FadeInPortrait PortraitDB Sherry p2Concern>>
 <<if $haspaper is 1 and $hasinvisibleinkpen is 1 and $hascandy is 1>>
     I wonder if...
-    <<PlayMusic MusicManager PumpkinManSpeaks>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. I AM VERY GENEROUS ON HALLOWEEN. SO, WHEN I KNOCK, OPEN THE DOOR.
+    <<SwitchPortrait PortraitDB Sherry p2Fearful>><<PlayMusic MusicManager PumpkinManSpeaks>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. I AM VERY GENEROUS ON HALLOWEEN. SO, WHEN I KNOCK, OPEN THE DOOR.
     <<PlayMusic MusicManager Silence>>
     I need to show this letter to the police. Danny might be in danger.
     <<FadeOutAllPortraits PortraitDB>>
