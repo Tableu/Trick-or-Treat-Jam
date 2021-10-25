@@ -50,6 +50,7 @@ public class MusicManager : MonoBehaviour
         {
             musicSrc.UnPause();
             isPlayingMotive = false;
+            StartCoroutine(StartFade(musicSrc, 0.3f, 1, delegate { }));
         }
     }
     [YarnCommand("PlayMusic")]
@@ -90,7 +91,8 @@ public class MusicManager : MonoBehaviour
     [YarnCommand("StopMusic")]
     public void StopMusic()
     {
-        musicSrc.Stop();
+        StartCoroutine(StartFade(musicSrc,0.5f,0,delegate {  }));
+        StartCoroutine(StartFade(motiveSrc,0.5f,0,delegate {  }));
     }
     public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume, Action callback)
     {

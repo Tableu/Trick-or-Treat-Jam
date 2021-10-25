@@ -122,11 +122,11 @@ public class TransitionManager : MonoBehaviour
     }
     private IEnumerator MenuToRoomTransition()
     {
-        yield return StartCoroutine(BlackFadeOut(img, delegate 
+        yield return StartCoroutine(BlackFadeOut(img,"October 30th", delegate 
         {
             SceneManager.LoadScene("Scenes/Room Scene");
         }));
-        StartCoroutine(BlackFadeIn(img, delegate
+        StartCoroutine(BlackFadeIn(img,delegate
         {
             _room = GameObject.Find("TestRoom");
             dialogueRunner.StartDialogue();
@@ -136,7 +136,7 @@ public class TransitionManager : MonoBehaviour
     {
         dialogueRunner.dialogueUI.DialogueComplete();
         img.gameObject.SetActive(true);
-        StartCoroutine(BlackFadeOut(img, delegate
+        StartCoroutine(BlackFadeOut(img,parameters[2], delegate
         {
             LoadRoom(parameters[1]);
             StartCoroutine(BlackFadeIn(img, delegate
@@ -156,10 +156,11 @@ public class TransitionManager : MonoBehaviour
             yield return null;
         }
         Debug.Log("BlackFadeIn");
+
         callback();
     }
 
-    public IEnumerator BlackFadeOut(Image img, Action callback)
+    public IEnumerator BlackFadeOut(Image img, string date, Action callback)
     {
         img.color = new Color(0, 0, 0, 0);
         for (float i = 0; i <= 1; i += Time.deltaTime)
@@ -168,6 +169,24 @@ public class TransitionManager : MonoBehaviour
             yield return null;
         }
         Debug.Log("BlackFadeOut");
+        if (date != "NoDate")
+        {
+            text.gameObject.SetActive(true);
+            text.text = date;
+            for (float i = 0; i <= 1; i += Time.deltaTime)
+            {
+                text.color = new Color(1, 1, 1, i);
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(1);
+            for (float i = 1; i >= 0; i -= Time.deltaTime)
+            {
+                text.color = new Color(1, 1, 1, i);
+                yield return null;
+            }
+            text.gameObject.SetActive(false);
+        }
         callback();
     }
 }

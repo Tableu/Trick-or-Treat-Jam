@@ -243,6 +243,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 116270633}
+    - target: {fileID: 5410809027596453923, guid: 518cc3591c806994a88e363780f72c44, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410809027596453923, guid: 518cc3591c806994a88e363780f72c44, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1200
+      objectReference: {fileID: 0}
     - target: {fileID: 5410809029323905337, guid: 518cc3591c806994a88e363780f72c44, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1132,10 +1140,6 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 425781711}
-    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: roomPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
     - target: {fileID: 6656845475574131793, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: m_Name
       value: TransitionManager

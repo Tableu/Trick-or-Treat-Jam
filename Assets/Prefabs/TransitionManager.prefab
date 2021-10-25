@@ -47,7 +47,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yarnScripts:
   - {fileID: 2480198943629176163, guid: d038e7574ae0b064eac93ccf4eed4aa3, type: 3}
-  - {fileID: 2480198943629176163, guid: 2eec4fd93bae9474c86c8a86a4a1e433, type: 3}
   - {fileID: 2480198943629176163, guid: 8bb8d03269b0ef545adc6e967a1f4cb3, type: 3}
   - {fileID: 2480198943629176163, guid: 1635d37d962267742a05dec241a99ea4, type: 3}
   textLanguage: 
@@ -284,6 +283,6 @@ MonoBehaviour:
   - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
   - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
   - {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
-  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
+  - {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
   - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
   - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}

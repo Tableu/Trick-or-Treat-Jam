@@ -1,26 +1,26 @@
 title: Start
 tags: 
 colorID: 0
-position: -1331,-284
+position: -1331,-286
 ---
 <<LoadRoom TransitionManager DannysRoomDay>>
 <<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager Silence>>I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
 I really don’t know where they went.
 No, no…I already tried finding them near the str-
-<<SwitchPortrait PortraitDB Sherry p1Fearful>><<PlayMusic MusicManager DannysAgony>>Danny! I was so scared- where were you?! I… 
-<<AnimateSpeaker PortraitDB Danny>><<FadeInPortrait PortraitDB Danny BloodyFearful>>
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Fearful>><<PlayMusic MusicManager DannysAgony>>Danny! I was so scared- where were you?! I… 
+<<FadeInPortrait PortraitDB Danny BloodyFearful>>
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>What happened…who did this to you?
 <<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny BloodyFearful>>...
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Cry>>Danny...
 <<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny BloodyCrying>>...
-<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Sherry p1Concern>>Let's get you cleaned up.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>Let's get you cleaned up.
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager DannysRoomNight>>[[Danny'sRoom/Night]]
+<<RoomToRoomTransition TransitionManager DannysRoomNight NoDate>>[[Danny'sRoom/Night]]
 ===
 title: Danny'sRoom/Night
 tags: 
 colorID: 0
-position: -629,-396
+position: -631,-396
 ---
 <<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<FadeInPortrait PortraitDB Danny Neutral>><<PlayMusic MusicManager DannysRoom>>...
 Did you want to talk about it?
@@ -43,5 +43,5 @@ He turned into a shape of you, and you were hurt. You were bleeding.
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>I won't let anythin-
 <<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager DannysRoomMorning>>[[DannysBedroomEarlyMorning]]
+<<StopMusic MusicManager>><<RoomToRoomTransition TransitionManager DannysRoomMorning October31st>>[[DannysBedroomEarlyMorning]]
 ===
