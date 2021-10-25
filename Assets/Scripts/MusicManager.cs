@@ -63,17 +63,25 @@ public class MusicManager : MonoBehaviour
         {
             if (musicClips[index].loop)
             {
-                musicSrc.clip = musicClips[index].audioClip;
-                musicSrc.loop = musicClips[index].loop;
-                musicSrc.Play();
+                StartCoroutine(StartFade(musicSrc, 0.3f,0, delegate
+                {
+                    musicSrc.clip = musicClips[index].audioClip;
+                    musicSrc.loop = musicClips[index].loop;
+                    musicSrc.Play();
+                    StartCoroutine(StartFade(musicSrc, 0.3f, 1, delegate { }));
+                }));
             }
             else
             {
-                musicSrc.Pause();
-                motiveSrc.clip = musicClips[index].audioClip;
-                motiveSrc.loop = false;
-                motiveSrc.Play();
-                isPlayingMotive = true;
+                StartCoroutine(StartFade(musicSrc, 0.3f, 0, delegate
+                {
+                    musicSrc.Pause();
+                    motiveSrc.clip = musicClips[index].audioClip;
+                    motiveSrc.loop = false;
+                    motiveSrc.Play();
+                    isPlayingMotive = true;
+                    StartCoroutine(StartFade(motiveSrc, 0.3f, 1, delegate { }));
+                }));
             }
         }
         Debug.Log("Playing song: " + songToChangeTo);
@@ -83,6 +91,20 @@ public class MusicManager : MonoBehaviour
     public void StopMusic()
     {
         musicSrc.Stop();
+    }
+    public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume, Action callback)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        callback();
+        yield break;
     }
 }
 
