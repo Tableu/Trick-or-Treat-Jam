@@ -8,12 +8,19 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-CA
   stringIDs:
   - DannysRoomNight2-DannysRoomBlankPaper-0
   - DannysRoomNight2-DannysRoomInvisibleInkPen-1
+  - DannysRoomNight2-DannysRoomInvisibleInkPen-2
+  - DannysRoomNight2-DannysRoomCandy-3
+  - DannysRoomNight2-DannysRoomLamp-4
+  - DannysRoomNight2-DannysRoomLamp-5
+  - DannysRoomNight2-DannysRoomLamp-6
+  - DannysRoomNight2-DannysRoomLamp-7
+  - DannysRoomNight2-LivingRoomNight2-8
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: 1635d37d962267742a05dec241a99ea4, type: 3}
   localizations: []
