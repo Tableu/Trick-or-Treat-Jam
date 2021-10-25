@@ -1,10 +1,10 @@
 title: DannysBedroomEarlyMorning
 tags: 
 colorID: 0
-position: -2040,-801
+position: -2039,-803
 ---
-<<wait 2>>
 <<PlayMusic MusicManager PumpkinManSpeaks>>
+<<wait 2>>
 <<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Fearful>>
 Danny! Danny! Da...
 <<FadeOutAllPortraits PortraitDB>>
