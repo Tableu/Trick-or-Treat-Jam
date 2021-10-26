@@ -10,8 +10,8 @@ public class AudioManager : MonoBehaviour
     static List<AudioSource> sources = new List<AudioSource>();
     public enum Sound
     {
-        test,
-        Button
+        Click,
+        Button,
     }
 
     //Clears any nonexistant audio sources
