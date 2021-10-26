@@ -644,7 +644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7785888, y: 1}
+    m_SensorSize: {x: 1.7785467, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -664,14 +664,6 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 116270634}
-    - target: {fileID: 404964315, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 404964315, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2646193744331083831, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1052,17 +1044,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 425781710}
     - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: onLineUpdate.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 425781705}
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: onLineUpdate.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: onLineStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1088,25 +1072,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 425781712}
     - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: onLineUpdate.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: onLineUpdate.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: set_DialogueText
-      objectReference: {fileID: 0}
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: onLineFinishDisplaying.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 425781705}
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: onLineUpdate.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: DialogueTextSoundCaller, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: onLineUpdate.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6656845475574131791, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: m_RootOrder
       value: 4
