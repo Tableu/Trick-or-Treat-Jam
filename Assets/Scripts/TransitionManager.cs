@@ -7,10 +7,11 @@ using UnityEngine.UI;
 using Yarn.Unity;
 using Button = UnityEngine.UI.Button;
 using Image = UnityEngine.UI.Image;
+using TMPText = TMPro.TextMeshProUGUI;
 
 public class TransitionManager : MonoBehaviour
 {
-    [SerializeField] private Text text;
+    [SerializeField] private TMPText text;
     [SerializeField] private string soundDisclaimer;
     public DialogueRunner dialogueRunner;
     [SerializeField] private string warning;
