@@ -16,6 +16,7 @@ public class DialogueTextSoundCaller : MonoBehaviour
             if (!string.IsNullOrWhiteSpace(charAdded))
             {
                 //Call sound stuff let's gooooo!
+                AudioManager.PlaySound(AudioManager.Sound.sherryDialogue.ToString());
             }
         }
     }

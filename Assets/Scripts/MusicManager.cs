@@ -64,12 +64,12 @@ public class MusicManager : MonoBehaviour
         {
             if (musicClips[index].loop)
             {
-                StartCoroutine(StartFade(musicSrc, 0.3f,0, delegate
+                StartCoroutine(StartFade(musicSrc, 2.0f,0, delegate
                 {
                     musicSrc.clip = musicClips[index].audioClip;
                     musicSrc.loop = musicClips[index].loop;
                     musicSrc.Play();
-                    StartCoroutine(StartFade(musicSrc, 0.3f, 1, delegate { }));
+                    StartCoroutine(StartFade(musicSrc, 2.0f, 1, delegate { }));
                 }));
             }
             else
@@ -91,12 +91,12 @@ public class MusicManager : MonoBehaviour
     [YarnCommand("StopMusic")]
     public void StopMusic()
     {
-        StartCoroutine(StartFade(musicSrc,0.5f,0,delegate {  }));
-        StartCoroutine(StartFade(motiveSrc,0.5f,0,delegate {  }));
+        StartCoroutine(StartFade(musicSrc,2.0f,0,delegate {  }));
+        StartCoroutine(StartFade(motiveSrc,2.0f,0,delegate {  }));
     }
     public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume, Action callback)
     {
-        float currentTime = 0;
+        float currentTime = 2.0f;
         float start = audioSource.volume;
 
         while (currentTime < duration)

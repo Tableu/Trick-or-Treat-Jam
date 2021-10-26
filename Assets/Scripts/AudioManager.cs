@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
     {
         Click,
         Button,
+        sherryDialogue,
+        policeDialogue,
+        dannyDialogue,
     }
 
     //Clears any nonexistant audio sources
