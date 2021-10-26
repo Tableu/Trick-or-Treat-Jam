@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 using Yarn.Unity;
 
 public class PortraitController : MonoBehaviour
 {
     [SerializeField] private DialogueRunner dialogueRunner;
+    [SerializeField] private Color fadedColor;
     
     // Start is called before the first frame update
     void Start()
@@ -33,7 +35,7 @@ public class PortraitController : MonoBehaviour
             List<SpriteRenderer> spriteRenderers = PortraitDB.Instance.characters.Select(o => o.characterSpriteRenderer).ToList();
             foreach(SpriteRenderer spriteRenderer in spriteRenderers)
             {
-                spriteRenderer.color = new Color(1, 1, 1, 0.5f);
+                spriteRenderer.color = new Color(fadedColor.r,fadedColor.g,fadedColor.b,spriteRenderer.color.a);
                 spriteRenderer.size = new Vector2(1, 1);
             }
             SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
@@ -60,8 +62,9 @@ public class PortraitController : MonoBehaviour
         if (Character.TryParse(character, out charEnum))
         {
             SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
+            Color color = img.color;
             img.sprite = PortraitDB.Instance.GetPortrait(charEnum, expression);
-            img.color = new Color(1, 1, 1, 0);
+            img.color = new Color(color.r, color.g, color.b, 0);
             StartCoroutine(FadeIn(img, onComplete));
         }
     }
@@ -94,23 +97,25 @@ public class PortraitController : MonoBehaviour
     //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
     private IEnumerator FadeIn(SpriteRenderer img, Action onComplete)
     {
+        var color = img.color;
         for (float i = 0; i <= 1; i += 4*Time.deltaTime)
         {
-            img.color = new Color(1, 1, 1, i);
+            img.color = new Color(color.r, color.g, color.b, i);
             yield return null;
         }
-        img.color = new Color(1, 1, 1, 1);
+        img.color = new Color(color.r, color.g, color.b, 1);
         onComplete();
     }
     //https://forum.unity.com/threads/simple-ui-animation-fade-in-fade-out-c.439825/
     private IEnumerator FadeOut(SpriteRenderer img, Action onComplete)
     {
-        for (float i = 1; i >= 0; i -= 4*Time.deltaTime)
+        var color = img.color;
+        for (float i = img.color.a; i >= 0; i -= 4*Time.deltaTime)
         {
-            img.color = new Color(1, 1, 1, i);
+            img.color = new Color(color.r, color.g, color.b, i);
             yield return null;
         }
-        img.color = new Color(1, 1, 1, 0);
+        img.color = new Color(color.r, color.g, color.b, 0);
         onComplete();
     }
 }

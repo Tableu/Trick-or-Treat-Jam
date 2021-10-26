@@ -1,0 +1,50 @@
+title: DannysRoomBlankPaper
+tags: 
+colorID: 0
+position: -1562,-989
+---
+<<PlayMusic MusicManager HelpfulClue2>><<FadeInPortrait PortraitDB Sherry p2Concern>>This seems to have nothing written over it.
+<<FadeOutAllPortraits PortraitDB>><<set $haspaper to 1>>
+===
+title: DannysRoomInvisibleInkPen
+tags: 
+colorID: 8
+position: -1279,-995
+---
+<<FadeInPortrait PortraitDB Sherry p2Concern>>Danny’s invisible ink pen. I remember Jason used to write love letters to me in high school with them so that my father wouldn’t find out. I remember spending nights reading his letters by secretly burning a candle in my room.
+My father never cared to install a lamp in my room, so I always had to come up with excuses as to why there were so many burned candles lying around. 
+<<FadeOutAllPortraits PortraitDB>><<set $hasinvisibleinkpen to 1>>
+===
+title: DannysRoomCandy
+tags: 
+colorID: 0
+position: -1032,-990
+---
+<<FadeInPortrait PortraitDB Sherry p2Concern>>What is this strawberry flavored candy doing here? Danny hates them.
+<<FadeOutAllPortraits PortraitDB>><<set $hascandy to 1>>
+===
+title: DannysRoomLamp
+tags: 
+colorID: 0
+position: -1688,-777
+---
+<<FadeInPortrait PortraitDB Sherry p2Concern>>
+<<if $haspaper is 1 and $hasinvisibleinkpen is 1 and $hascandy is 1>>
+    I wonder if...
+    <<SwitchPortrait PortraitDB Sherry p2Fearful>><<PlayMusic MusicManager PumpkinManSpeaks>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. I AM VERY GENEROUS ON HALLOWEEN. SO, WHEN I KNOCK, OPEN THE DOOR.
+    <<PlayMusic MusicManager Silence>>
+    I need to show this letter to the police. Danny might be in danger.
+    <<FadeOutAllPortraits PortraitDB>>
+    <<RoomToRoomTransition TransitionManager LivingRoomNight2>>[[LivingRoomNight2]]
+<<else>>
+    ...
+<<endif>>
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: LivingRoomNight2
+tags: 
+colorID: 0
+position: -1374,-770
+---
+Empty Text
+===

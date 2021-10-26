@@ -1,0 +1,114 @@
+title: DannysBedroomEarlyMorning
+tags: 
+colorID: 0
+position: -2039,-803
+---
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>>Danny?
+<<SwitchPortrait PortraitDB Sherry p1Cry>>Danny, where'd you go?
+<<PlayMusic MusicManager TerrifyingClue>><<SwitchPortrait PortraitDB Sherry p1Sob>>DANNY?!
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager LivingRoom NoDate>>[[LivingRoomMorning]]
+===
+title: LivingRoomMorning
+tags: 
+colorID: 8
+position: -1657,-794
+---
+<<LoadRoom TransitionManager LivingRoomDay>>
+<<PlayMusic MusicManager LivingRoomDay>>
+<<AnimateSpeaker PortraitDB Policeman>><<FadeInPortrait PortraitDB Policeman Speaking>><<FadeInPortrait PortraitDB Sherry p2Neutral>>
+Anything else you wish to tell me?
+<<AnimateSpeaker PortraitDB Sherry>>He...h-he wa-was...
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Neutral>>It is alright ma'am, take your time.
+<<AnimateSpeaker PortraitDB Sherry>>I…I know it’s going to sound crazy, but he was talking about some creature or man in a pumpkin mask.
+<<SwitchPortrait PortraitDB Sherry p2Concern>>He mentioned it was changing shapes, and the body... The body was like a shapeshifting creature. 
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Concern>>I understand. 
+<<SwitchPortrait PortraitDB Policeman Speaking>>Sometimes in moments of stress, we tend to see things that we are not supposed to see. 
+Danny might have gone through something like that. Though, if it is a man in a pumpkin mask, then we will search for him.
+<<SwitchPortrait PortraitDB Policeman Concern>>I don’t mean to scare you, but even if this...thing is an unspeakable creature, we may have a serial killer on our hands. 
+<<SwitchPortrait PortraitDB Policeman Speaking>>I believe you should have told us about this earlier, but...I will inform the department to keep an eye on any person roaming around in a pumpkin mask. 
+<<SwitchPortrait PortraitDB Policeman Concern>>Hallucination or not, Danny might be in danger here.
+<<AnimateSpeaker PortraitDB Sherry>>I...I...
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Speaking>>By the way, I just wanted to confirm- 
+<<SwitchPortrait PortraitDB Policeman Neutral>>Do you believe the message on his window could be related to this pumpkin mask guy that he was talking about?
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Neutral>>I don’t know. 
+<<SwitchPortrait PortraitDB Sherry p2Concern>>Maybe. 
+He was sad and scared, and I wanted to be brave for him.
+I...
+<<SwitchPortrait PortraitDB Sherry p2Cry>>I don’t know what to say. 
+<<SwitchPortrait PortraitDB Sherry p2Sob>>I just want my son back.
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Speaking>>Ok, ma’am, listen to me. We are going to send out another search party for him. 
+<<SwitchPortrait PortraitDB Policeman Neutral>>We will start where we found his friends.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Concern>>His friends?
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Concern>>Ah, yes. This morning we found Sonny Parker and Ronald Howard’s bodies near the cave. 
+They were nearly unidentifiable due to some...missing parts.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Sob>>Oh, my god! No…No!
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Concern>>I'm very sorry, ma'am.
+I understand this may be incredibly upsetting to hear.
+But you must remain calm and work with us.
+For Danny's sake.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Sob>>Please, officer. He is the only thing that is dear to me. 
+You are a parent too, right? You understand, right!? So please! I...I...I am begging you…
+<<AnimateSpeaker PortraitDB Policeman>>I understand, but please stay calm ma’am. 
+I promise that we will keep you updated on anything that we learn.
+Please do not leave the house.
+<<SwitchPortrait PortraitDB Policeman Concern>>If he happens to return home, please inform us immediately.
+You need to be here for him.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Sob>>...
+Okay.
+<<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Speaking>>Good. If he returns, call us immediately.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Concern>>I...I will.
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager LivingRoomNight NoDate>>[[LivingRoomNight]]
+===
+title: LivingRoomNight
+tags: 
+colorID: 8
+position: -1367,-806
+---
+<<LoadRoom TransitionManager LivingRoomNight>><<PlayMusic MusicManager LivingRoomNight>>
+<<FadeInPortrait PortraitDB Sherry p2Concern>>How can parents outside still let their kids trick or treat today? Don’t they know what happened? Don’t they care?
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: LivingRoomWindow
+tags: 
+colorID: 0
+position: -1093,-807
+---
+<<FadeInPortrait PortraitDB Sherry p2Concern>>Danny...Oh Danny, please come back.
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: LivingRoomTelephone
+tags: 
+colorID: 0
+position: -611,-856
+---
+<<FadeInPortrait PortraitDB Sherry p2Concern>>Please, ring soon and tell me he is alright
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: LivingRoomPumpkin
+tags: 
+colorID: 8
+position: -850,-664
+---
+<<FadeInPortrait PortraitDB Sherry p2Neutral>>I should throw this in the garbage.
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: LivingRoomPhotos
+tags: 
+colorID: 0
+position: -846,-916
+---
+<<FadeInPortrait PortraitDB Sherry p2Sob>><<PlayMusic MusicManager SherrysPain>>
+You just had to go and shoot yourself in the head, didn’t you? Were we troubling you so much?
+<<SwitchPortrait PortraitDB Sherry p2Cry>>You had a KID, Jason. And now he’s in danger because you aren’t HERE!
+<<SwitchPortrait PortraitDB Sherry p2ScreamA>>WHY DID YOU HAVE TO DO WHAT YOU DID?! WHY DID YOU HAVE TO LEAVE ME ALONE LIKE THIS?!
+<<SwitchPortrait PortraitDB Sherry p2Sob>>You should have at least left a letter…but no. I hope you are enjoying my agony from hell...YOU FUCKING COWARD!!!
+<<PlayMusic MusicManager Silence>>
+<<wait 2>>
+<<PlayMusic MusicManager DannysAgony>>What was that? Danny?! Danny... Is that you?
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager DannysRoomNight2>>
+<<PlayMusic MusicManager DannyIsGone>><<FadeInPortrait PortraitDB Sherry p2Concern>>Danny?!
+<<FadeOutAllPortraits PortraitDB>>
+===

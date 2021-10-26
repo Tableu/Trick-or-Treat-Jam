@@ -23,7 +23,12 @@ public class MusicManager : MonoBehaviour
         HelpfulClue2,
         SherrysFear,
         SherrysPain,
-        Silence
+        Silence,
+        PumpkinManSpeaks,
+        PlayMotive,
+        LivingRoomNight,
+        DannyIsGone,
+        TerrifyingClue
     }
     // Don't destroy gameobject
     void Awake()
@@ -45,6 +50,7 @@ public class MusicManager : MonoBehaviour
         {
             musicSrc.UnPause();
             isPlayingMotive = false;
+            StartCoroutine(StartFade(musicSrc, 0.3f, 1, delegate { }));
         }
     }
     [YarnCommand("PlayMusic")]
@@ -58,17 +64,25 @@ public class MusicManager : MonoBehaviour
         {
             if (musicClips[index].loop)
             {
-                musicSrc.clip = musicClips[index].audioClip;
-                musicSrc.loop = musicClips[index].loop;
-                musicSrc.Play();
+                StartCoroutine(StartFade(musicSrc, 0.3f,0, delegate
+                {
+                    musicSrc.clip = musicClips[index].audioClip;
+                    musicSrc.loop = musicClips[index].loop;
+                    musicSrc.Play();
+                    StartCoroutine(StartFade(musicSrc, 0.3f, 1, delegate { }));
+                }));
             }
             else
             {
-                musicSrc.Pause();
-                motiveSrc.clip = musicClips[index].audioClip;
-                motiveSrc.loop = false;
-                motiveSrc.Play();
-                isPlayingMotive = true;
+                StartCoroutine(StartFade(musicSrc, 0.3f, 0, delegate
+                {
+                    musicSrc.Pause();
+                    motiveSrc.clip = musicClips[index].audioClip;
+                    motiveSrc.loop = false;
+                    motiveSrc.Play();
+                    isPlayingMotive = true;
+                    StartCoroutine(StartFade(motiveSrc, 0.3f, 1, delegate { }));
+                }));
             }
         }
         Debug.Log("Playing song: " + songToChangeTo);
@@ -77,7 +91,22 @@ public class MusicManager : MonoBehaviour
     [YarnCommand("StopMusic")]
     public void StopMusic()
     {
-        musicSrc.Stop();
+        StartCoroutine(StartFade(musicSrc,0.5f,0,delegate {  }));
+        StartCoroutine(StartFade(motiveSrc,0.5f,0,delegate {  }));
+    }
+    public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume, Action callback)
+    {
+        float currentTime = 0;
+        float start = audioSource.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        callback();
+        yield break;
     }
 }
 

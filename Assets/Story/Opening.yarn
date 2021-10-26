@@ -1,0 +1,47 @@
+title: Start
+tags: 
+colorID: 0
+position: -1331,-286
+---
+<<LoadRoom TransitionManager DannysRoomDay>>
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager Silence>>I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
+I really don’t know where they went.
+No, no…I already tried finding them near the str-
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Fearful>><<PlayMusic MusicManager DannysAgony>>Danny! I was so scared- where were you?! I… 
+<<FadeInPortrait PortraitDB Danny BloodyFearful>>
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>What happened…who did this to you?
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny BloodyFearful>>...
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Cry>>Danny...
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny BloodyCrying>>...
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>Let's get you cleaned up.
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager DannysRoomNight NoDate>>[[Danny'sRoom/Night]]
+===
+title: Danny'sRoom/Night
+tags: 
+colorID: 0
+position: -631,-396
+---
+<<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<FadeInPortrait PortraitDB Danny Neutral>><<PlayMusic MusicManager DannysRoom>>...
+Did you want to talk about it?
+<<AnimateSpeaker PortraitDB Danny>>...
+<<AnimateSpeaker PortraitDB Sherry>>Okay, let's just go to bed then.
+Okay?
+<<AnimateSpeaker PortraitDB Danny>>...
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Crying>>He left me alive-
+<<SwitchPortrait PortraitDB Danny Fearful>>-but he will come for me.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Fearful>><<PlayMusic MusicManager SherrysFear>>What?
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Neutral>>When we first saw him, we actually laughed. He looked goofy with a pumpkin on his head, but then…
+<<SwitchPortrait PortraitDB Danny Crying>>…he changed shape. 
+Ronald was screaming, “Werewolf! Werewolf!”… 
+Sonny just screamed, “No, no, Nosferatu!” and started dashing away. 
+I didn’t know what they meant.
+I saw…you.
+He turned into a shape of you, and you were hurt. You were bleeding.
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Fearful>>Danny...
+<<AnimateSpeaker PortraitDB Danny>>When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>I won't let anythin-
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
+<<FadeOutAllPortraits PortraitDB>>
+<<StopMusic MusicManager>><<RoomToRoomTransition TransitionManager DannysRoomMorning October31st>>[[DannysBedroomEarlyMorning]]
+===

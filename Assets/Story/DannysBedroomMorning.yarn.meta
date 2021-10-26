@@ -1,0 +1,54 @@
+fileFormatVersion: 2
+guid: 8bb8d03269b0ef545adc6e967a1f4cb3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-CA
+  stringIDs:
+  - DannysBedroomMorning-DannysBedroomEarlyMorning-0
+  - DannysBedroomMorning-LivingRoomMorning-1
+  - DannysBedroomMorning-LivingRoomMorning-2
+  - DannysBedroomMorning-LivingRoomMorning-3
+  - DannysBedroomMorning-LivingRoomMorning-4
+  - DannysBedroomMorning-LivingRoomMorning-5
+  - DannysBedroomMorning-LivingRoomMorning-6
+  - DannysBedroomMorning-LivingRoomMorning-7
+  - DannysBedroomMorning-LivingRoomMorning-8
+  - DannysBedroomMorning-LivingRoomMorning-9
+  - DannysBedroomMorning-LivingRoomMorning-10
+  - DannysBedroomMorning-LivingRoomMorning-11
+  - DannysBedroomMorning-LivingRoomMorning-12
+  - DannysBedroomMorning-LivingRoomMorning-13
+  - DannysBedroomMorning-LivingRoomMorning-14
+  - DannysBedroomMorning-LivingRoomMorning-15
+  - DannysBedroomMorning-LivingRoomMorning-16
+  - DannysBedroomMorning-LivingRoomMorning-17
+  - DannysBedroomMorning-LivingRoomMorning-18
+  - DannysBedroomMorning-LivingRoomMorning-19
+  - DannysBedroomMorning-LivingRoomMorning-20
+  - DannysBedroomMorning-LivingRoomMorning-21
+  - DannysBedroomMorning-LivingRoomMorning-22
+  - DannysBedroomMorning-LivingRoomMorning-23
+  - DannysBedroomMorning-LivingRoomMorning-24
+  - DannysBedroomMorning-LivingRoomMorning-25
+  - DannysBedroomMorning-LivingRoomMorning-26
+  - DannysBedroomMorning-LivingRoomNight-27
+  - DannysBedroomMorning-LivingRoomWindow-28
+  - DannysBedroomMorning-LivingRoomTelephone-29
+  - DannysBedroomMorning-LivingRoomPumpkin-30
+  - DannysBedroomMorning-LivingRoomPhotos-31
+  - DannysBedroomMorning-LivingRoomPhotos-32
+  - DannysBedroomMorning-LivingRoomPhotos-33
+  - DannysBedroomMorning-LivingRoomPhotos-34
+  - DannysBedroomMorning-LivingRoomPhotos-35
+  - DannysBedroomMorning-LivingRoomPhotos-36
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 8bb8d03269b0ef545adc6e967a1f4cb3, type: 3}
+  localizations: []

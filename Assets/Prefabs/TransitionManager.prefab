@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yarnScripts:
-  - {fileID: 2480198943629176163, guid: 20f2c0498bc4e9041a9c290924e553d6, type: 3}
+  - {fileID: 2480198943629176163, guid: d038e7574ae0b064eac93ccf4eed4aa3, type: 3}
+  - {fileID: 2480198943629176163, guid: 8bb8d03269b0ef545adc6e967a1f4cb3, type: 3}
+  - {fileID: 2480198943629176163, guid: 1635d37d962267742a05dec241a99ea4, type: 3}
   textLanguage: 
   variableStorage: {fileID: 6656845474792410615}
   dialogueUI: {fileID: 6656845474792410614}
@@ -54,10 +56,34 @@ MonoBehaviour:
   startAutomatically: 0
   onNodeStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6656845474792410614}
+        m_TargetAssemblyTypeName: Yarn.Unity.DialogueUI, YarnSpinner.Unity
+        m_MethodName: DialogueStarted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onNodeComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6656845474792410614}
+        m_TargetAssemblyTypeName: Yarn.Unity.DialogueUI, YarnSpinner.Unity
+        m_MethodName: DialogueComplete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialogueComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -106,9 +132,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onLineStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onLineFinishDisplaying:
     m_PersistentCalls:
       m_Calls:
@@ -228,3 +278,11 @@ MonoBehaviour:
   img: {fileID: 0}
   button: {fileID: 0}
   canvas: {fileID: 0}
+  roomPrefabs:
+  - {fileID: 6558918889711394451, guid: 2bcdd47ec0c58244fbc59166340d9052, type: 3}
+  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
+  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
+  - {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
+  - {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
+  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
+  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
