@@ -1,9 +1,9 @@
 title: LivingRoomNight2
 tags: 
 colorID: 0
-position: -1810,-937
+position: -1810,-939
 ---
-<<FadeInPortrait PortraitDB Sherry p2Scared>>Trick or treat.
+<<FadeInPortrait PortraitDB Sherry p2Fearful>>Trick or treat.
 Trick or treat~
 Danny likes treats. What does his mother like? Tricks...or Treats?
 [[Trick|Trick]]
@@ -87,5 +87,5 @@ position: -257,-1035
 ---
 Mom! Mom!
 <<FadeInPortrait PortraitDB Sherry p2Fearful>>Danny! Danny!
-<<RoomToRoomTransition TransitionManager DoorOfDannysRoom>>[[DoorOfDannysRoom]]
+<<RoomToRoomTransition TransitionManager DannyDoor>>[[DoorOfDannysRoom]]
 ===

@@ -1,9 +1,9 @@
 title: Start
 tags: 
 colorID: 0
-position: -1331,-286
+position: -1331,-288
 ---
-<<LoadRoom TransitionManager DannysRoomDay>>
+<<LoadRoom TransitionManager LivingRoomNight>>
 <<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<PlayMusic MusicManager Silence>>I tried finding them near the diner, but Leila said she didn’t see them today. Not even in the lake, or the cave. 
 I really don’t know where they went.
 No, no…I already tried finding them near the str-
@@ -15,7 +15,7 @@ No, no…I already tried finding them near the str-
 <<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny BloodyCrying>>...
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>Let's get you cleaned up.
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager DannysRoomNight NoDate>>[[Danny'sRoom/Night]]
+<<RoomToRoomTransition TransitionManager DannyRoomNight NoDate>>[[Danny'sRoom/Night]]
 ===
 title: Danny'sRoom/Night
 tags: 
@@ -43,5 +43,5 @@ He turned into a shape of you, and you were hurt. You were bleeding.
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>I won't let anythin-
 <<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
 <<FadeOutAllPortraits PortraitDB>>
-<<StopMusic MusicManager>><<RoomToRoomTransition TransitionManager DannysRoomMorning October31st>>[[DannysBedroomEarlyMorning]]
+<<StopMusic MusicManager>><<RoomToRoomTransition TransitionManager DannyRoomMorning October_31st>>[[DannysBedroomEarlyMorning]]
 ===

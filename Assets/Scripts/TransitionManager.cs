@@ -22,13 +22,15 @@ public class TransitionManager : MonoBehaviour
 
     public enum Room
     {
-        DannysRoomNight,
-        DannysRoomDay,
-        DannysRoomMorning,
-        LivingRoomMorning,
         LivingRoomNight,
-        DannysRoomNight2,
-        LivingRoomNight2
+        DannyRoomNight,
+        DannyRoomMorning,
+        LivingRoomMorning,
+        DannyRoomNight2,
+        LivingRoomNight2,
+        LivingRoomFogged,
+        LivingRoomFoggedNote,
+        DannyDoor
     }
 
     private static TransitionManager _instance;

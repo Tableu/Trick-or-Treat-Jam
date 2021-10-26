@@ -5,18 +5,37 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Yarn.Unity;
 
-public class ClickableObject : MonoBehaviour, IPointerClickHandler
+public class ClickableObject : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private string node;
-    private bool clickable;
+    [SerializeField] private bool clickable;
+    [SerializeField] private SpriteRenderer glow;
     private SpriteRenderer img;
+    
     
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("clicked on object");
-        TransitionManager.Instance.dialogueRunner.StartDialogue(node);
-        img = GetComponent<SpriteRenderer>();
+        if (clickable)
+        {
+            Debug.Log("clicked on object");
+            TransitionManager.Instance.dialogueRunner.StartDialogue(node);
+            img = GetComponent<SpriteRenderer>();
+            clickable = false;
+        }
     }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if(clickable)
+            glow.enabled = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if(clickable)
+            glow.enabled = false;
+    }
+
     [YarnCommand("SetObjectClickable")]
     public void SetObjectClickable()
     {

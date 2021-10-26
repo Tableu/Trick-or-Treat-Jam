@@ -7,6 +7,7 @@ position: -1562,-989
 <<if $hasinvisibleinkpen is 1 and $hascandy is 1>>
     <<StopMusic MusicManager>><<wait 1>>
     <<PlayMusic MusicManager TerrifyingClue>>
+    <<SetObjectClickable Lamp>>
 <<endif>>
 <<FadeOutAllPortraits PortraitDB>><<set $haspaper to 1>>
 ===
@@ -21,6 +22,7 @@ My father never cared to install a lamp in my room, so I always had to come up w
 <<if $haspaper is 1 and $hascandy is 1>>
     <<StopMusic MusicManager>><<wait 1>>
     <<PlayMusic MusicManager TerrifyingClue>>
+    <<SetObjectClickable Lamp>>
 <<endif>>
 <<FadeOutAllPortraits PortraitDB>><<set $hasinvisibleinkpen to 1>>
 ===
@@ -33,6 +35,7 @@ position: -1032,-990
 <<if $hasinvisibleinkpen is 1 and $haspaper is 1>>
     <<StopMusic MusicManager>><<wait 1>>
     <<PlayMusic MusicManager TerrifyingClue>>
+    <<SetObjectClickable Lamp>>
 <<endif>>
 <<FadeOutAllPortraits PortraitDB>><<set $hascandy to 1>>
 ===
@@ -42,16 +45,12 @@ colorID: 0
 position: -1708,-693
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>
-<<if $haspaper is 1 and $hasinvisibleinkpen is 1 and $hascandy is 1>>
-    <<StopMusic MusicManager>>I wonder if...
-    <<SwitchPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager PumpkinMansBreath>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. I AM VERY GENEROUS ON HALLOWEEN. SO, WHEN I KNOCK, OPEN THE DOOR.
-    <<PlayMusic MusicManager Silence>>
-    I need to show this letter to the police. Danny might be in danger.
-    <<FadeOutAllPortraits PortraitDB>>
-    <<RoomToRoomTransition TransitionManager LivingRoomNight2>>[[LivingRoomNight2]]
-<<else>>
-    ...
-<<endif>>
+<<StopMusic MusicManager>>I wonder if...
+<<SwitchPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager PumpkinMansBreath>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. I AM VERY GENEROUS ON HALLOWEEN. SO, WHEN I KNOCK, OPEN THE DOOR.
+<<PlayMusic MusicManager Silence>>
+I need to show this letter to the police. Danny might be in danger.
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager LivingRoomNight2 NoDate>>[[LivingRoomNight2]]
 <<FadeOutAllPortraits PortraitDB>>
 ===
 title: DannysRoomNight2

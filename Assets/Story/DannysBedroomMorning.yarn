@@ -7,14 +7,13 @@ position: -2039,-803
 <<SwitchPortrait PortraitDB Sherry p1Cry>>Danny, where'd you go?
 <<PlayMusic MusicManager TerrifyingClue>><<SwitchPortrait PortraitDB Sherry p1Sob>>DANNY?!
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager LivingRoom NoDate>>[[LivingRoomMorning]]
+<<RoomToRoomTransition TransitionManager LivingRoomMorning NoDate>>[[LivingRoomMorning]]
 ===
 title: LivingRoomMorning
 tags: 
 colorID: 8
 position: -1657,-794
 ---
-<<LoadRoom TransitionManager LivingRoomDay>>
 <<PlayMusic MusicManager LivingRoomDay>>
 <<AnimateSpeaker PortraitDB Policeman>><<FadeInPortrait PortraitDB Policeman Speaking>><<FadeInPortrait PortraitDB Sherry p2Neutral>>
 Anything else you wish to tell me?
@@ -59,21 +58,21 @@ Okay.
 <<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Speaking>>Good. If he returns, call us immediately.
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Concern>>I...I will.
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager LivingRoomNight 14hourslater...>>[[LivingRoomNight]]
+<<RoomToRoomTransition TransitionManager LivingRoomNight2 14hourslater...>>[[LivingRoomNight]]
 ===
 title: LivingRoomNight
 tags: 
 colorID: 8
-position: -1367,-806
+position: -1367,-809
 ---
-<<LoadRoom TransitionManager LivingRoomNight>><<PlayMusic MusicManager LivingRoomNight>>
+<<PlayMusic MusicManager LivingRoomNight>>
 <<FadeInPortrait PortraitDB Sherry p2Concern>>How can parents outside still let their kids trick or treat today? Don’t they know what happened? Don’t they care?
 <<FadeOutAllPortraits PortraitDB>>
 ===
 title: LivingRoomWindow
 tags: 
 colorID: 0
-position: -1093,-807
+position: -1093,-809
 ---
 <<FadeInPortrait PortraitDB Sherry p2Concern>>Danny...Oh Danny, please come back.
 <<FadeOutAllPortraits PortraitDB>>
@@ -89,7 +88,7 @@ position: -611,-856
 title: LivingRoomPhotos
 tags: 
 colorID: 0
-position: -862,-654
+position: -861,-654
 ---
 <<FadeInPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager SherrysPain>>
 You just had to go and shoot yourself in the head, didn’t you? Were we troubling you so much?
@@ -102,5 +101,5 @@ You just had to go and shoot yourself in the head, didn’t you? Were we troubli
 <<wait 2>>
 <<PlayMusic MusicManager DannysAgony>><<FadeInPortrait PortraitDB Sherry p2Neutral>>What was that? Danny?! Danny... Is that you?
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager DannysRoomNight2>>[[DannysRoomNight2]]
+<<RoomToRoomTransition TransitionManager DannyRoomNight2 NoDate>>[[DannysRoomNight2]]
 ===

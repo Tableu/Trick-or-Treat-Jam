@@ -189,6 +189,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueTextSoundCaller, Assembly-CSharp
+        m_MethodName: set_DialogueText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onLineEnd:
     m_PersistentCalls:
       m_Calls:
@@ -279,10 +291,12 @@ MonoBehaviour:
   button: {fileID: 0}
   canvas: {fileID: 0}
   roomPrefabs:
-  - {fileID: 6558918889711394451, guid: 2bcdd47ec0c58244fbc59166340d9052, type: 3}
-  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
-  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
-  - {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
+  - {fileID: 8541903249010331759, guid: a8388e0ffedf8be479f362db6510d2ae, type: 3}
   - {fileID: 7673608422353617874, guid: cc9993c35d5e4d342b780b67a85bee0d, type: 3}
   - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
+  - {fileID: 1341611929963538429, guid: 6db0c147b471b9849897cc7056c6a99c, type: 3}
+  - {fileID: 2841102096627740940, guid: 72c613501fd5cd94aa59f1336ddb53c7, type: 3}
+  - {fileID: 4300782672120915085, guid: b3d352b9933aba54cb2dd5f08e75a15d, type: 3}
+  - {fileID: 3086877326406797261, guid: 85d383a39f3907846934522481a844b2, type: 3}
+  - {fileID: 1543105170257828915, guid: 20527c982e1604d4fbc95a1a16b09ca5, type: 3}
   - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}

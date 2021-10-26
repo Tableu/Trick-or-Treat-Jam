@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 724b6708a1e433049a92ff1facc9800e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-CA
+  stringIDs: []
+  compilationStatus: 0
+  isSuccesfullyCompiled: 0
+  compilationErrorMessage: "Error on line 28 at position 49:\nmismatched input ']'
+    expecting FORMAT_FUNCTION_EXPRESSION_START\r\n<<SwitchPortrait PortraitDB Sherry
+    p2ScreamA>>[b]NO!![/b]\r\n                                                ^"
+  baseLanguage: {instanceID: 0}
+  localizations: []
