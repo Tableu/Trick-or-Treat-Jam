@@ -124,7 +124,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2100, y: 1200}
+  m_SizeDelta: {x: 40, y: 24.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5410809027596453933
 CanvasRenderer:
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiSrc: {fileID: 3414664857185272010}
   uiClick: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
-  uiHover: {fileID: 8300000, guid: 5e449cea68924114fa48ba12b182674f, type: 3}
+  uiHover: {fileID: 8300000, guid: 520656734d140744d8242fc7b679b0c8, type: 3}
   uiBack: {fileID: 8300000, guid: 5e449cea68924114fa48ba12b182674f, type: 3}
 --- !u!82 &3414664857185272010
 AudioSource:
@@ -1018,7 +1018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8267124592686283475, guid: 1b59d4d729c72e04babe2ef0215a8987, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 8267124592686283475, guid: 1b59d4d729c72e04babe2ef0215a8987, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

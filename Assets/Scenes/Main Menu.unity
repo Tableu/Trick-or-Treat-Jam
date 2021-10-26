@@ -335,10 +335,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7004138444726282952, guid: 518cc3591c806994a88e363780f72c44, type: 3}
-      propertyPath: uiHover
-      value: 
-      objectReference: {fileID: 8300000, guid: 520656734d140744d8242fc7b679b0c8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518cc3591c806994a88e363780f72c44, type: 3}
 --- !u!114 &425781704 stripped
@@ -648,7 +644,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7776382, y: 1}
+    m_SensorSize: {x: 1.7785888, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -668,6 +664,14 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 116270634}
+    - target: {fileID: 404964315, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 404964315, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2646193744331083831, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_RootOrder
       value: 6
