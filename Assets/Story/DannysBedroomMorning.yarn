@@ -59,7 +59,7 @@ Okay.
 <<AnimateSpeaker PortraitDB Policeman>><<SwitchPortrait PortraitDB Policeman Speaking>>Good. If he returns, call us immediately.
 <<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Concern>>I...I will.
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager LivingRoomNight NoDate>>[[LivingRoomNight]]
+<<RoomToRoomTransition TransitionManager LivingRoomNight 14hourslater...>>[[LivingRoomNight]]
 ===
 title: LivingRoomNight
 tags: 
@@ -86,29 +86,21 @@ position: -611,-856
 <<FadeInPortrait PortraitDB Sherry p2Concern>>Please, ring soon and tell me he is alright
 <<FadeOutAllPortraits PortraitDB>>
 ===
-title: LivingRoomPumpkin
-tags: 
-colorID: 8
-position: -850,-664
----
-<<FadeInPortrait PortraitDB Sherry p2Neutral>>I should throw this in the garbage.
-<<FadeOutAllPortraits PortraitDB>>
-===
 title: LivingRoomPhotos
 tags: 
 colorID: 0
-position: -846,-916
+position: -862,-654
 ---
-<<FadeInPortrait PortraitDB Sherry p2Sob>><<PlayMusic MusicManager SherrysPain>>
+<<FadeInPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager SherrysPain>>
 You just had to go and shoot yourself in the head, didn’t you? Were we troubling you so much?
 <<SwitchPortrait PortraitDB Sherry p2Cry>>You had a KID, Jason. And now he’s in danger because you aren’t HERE!
-<<SwitchPortrait PortraitDB Sherry p2ScreamA>>WHY DID YOU HAVE TO DO WHAT YOU DID?! WHY DID YOU HAVE TO LEAVE ME ALONE LIKE THIS?!
-<<SwitchPortrait PortraitDB Sherry p2Sob>>You should have at least left a letter…but no. I hope you are enjoying my agony from hell...YOU FUCKING COWARD!!!
-<<PlayMusic MusicManager Silence>>
+<<SwitchPortrait PortraitDB Sherry p2Sob>>WHY DID YOU HAVE TO DO WHAT YOU DID?!
+<<SwitchPortrait PortraitDB Sherry p2ScreamA>>WHY DID YOU HAVE TO LEAVE ME ALONE LIKE THIS?!
+<<SwitchPortrait PortraitDB Sherry p2Cry>>You should have at least left a letter…but no. I hope you are enjoying my agony from hell...YOU FUCKING COWARD!!!
+<<SwitchPortrait PortraitDB Sherry p2Concern>>Urgh... I'm sorry...
+<<PlayMusic MusicManager Silence>><<FadeOutAllPortraits PortraitDB>>
 <<wait 2>>
-<<PlayMusic MusicManager DannysAgony>>What was that? Danny?! Danny... Is that you?
+<<PlayMusic MusicManager DannysAgony>><<FadeInPortrait PortraitDB Sherry p2Neutral>>What was that? Danny?! Danny... Is that you?
 <<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager DannysRoomNight2>>
-<<PlayMusic MusicManager DannyIsGone>><<FadeInPortrait PortraitDB Sherry p2Concern>>Danny?!
-<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager DannysRoomNight2>>[[DannysRoomNight2]]
 ===

@@ -1,0 +1,51 @@
+title: LivingRoomNight2
+tags: 
+colorID: 0
+position: -1810,-937
+---
+<<FadeInPortrait PortraitDB Sherry p2Scared>>Trick or treat.
+Trick or treat~
+Danny likes treats. What does his mother like? Tricks...or Treats?
+[[Trick|Trick]]
+[[Treat|Treat]]
+===
+title: Trick
+tags: 
+colorID: 0
+position: -1286,-971
+---
+<<if $treat is null>>
+    <<set $trick to 1>>
+<<endif>>
+<<LoadRoom TransitionManager LivingRoomFogged>><<SwitchPortrait PortraitDB Sherry p2Concern>>Wh'what? The lights turned off.
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: Treat
+tags: 
+colorID: 0
+position: -1506,-710
+---
+<<set $treat to 1>>
+Sorry, I ate all of the treats, but I shared some with little Danny yesterday.
+I shared with him the teeth of Nosferatu and the claws of a werewolf.
+He didn’t puke them out. He is a nice boy. I bet you are happy to have a son like him.
+A son…who always finishes his meals.
+[[Trick]]
+===
+title: LivingRoomFoggedDoor
+tags: 
+colorID: 0
+position: -922,-921
+---
+<<FadeInPortrait PortraitDB Sherry p2Neutral>>Oh...
+<<SwitchPortrait PortraitDB Sherry p2Concern>>It's locked. Oh God.
+<<FadeOutAllPortraits PortraitDB>><<set $door to 1>>
+===
+title: LivingRoomFoggedLamp
+tags: 
+colorID: 0
+position: -1093,-722
+---
+<<FadeInPortrait PortraitDB Sherry p2Neutral>>I guess there's a power outage? How strange.
+<<FadeOutAllPortraits PortraitDB>><<set $lamp to 1>>
+===

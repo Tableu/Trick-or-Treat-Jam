@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 503862da442b2ff4f910f4005ba87240
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - LivingRoomNight2-LivingRoomNight2-0
+  - LivingRoomNight2-LivingRoomNight2-1
+  - LivingRoomNight2-LivingRoomNight2-2
+  - LivingRoomNight2-LivingRoomNight2-3
+  - LivingRoomNight2-LivingRoomNight2-4
+  - LivingRoomNight2-Trick-5
+  - LivingRoomNight2-Treat-6
+  - LivingRoomNight2-Treat-7
+  - LivingRoomNight2-Treat-8
+  - LivingRoomNight2-Treat-9
+  - LivingRoomNight2-LivingRoomFoggedDoor-10
+  - LivingRoomNight2-LivingRoomFoggedDoor-11
+  - LivingRoomNight2-LivingRoomFoggedLamp-12
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
