@@ -103,7 +103,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 0}
   textSpeed: 0.03
-  optionButtons: []
+  optionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
   onDialogueStart:
     m_PersistentCalls:
       m_Calls:
@@ -220,10 +222,34 @@ MonoBehaviour:
         m_CallState: 2
   onOptionsStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onOptionsEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onCommand:
     m_PersistentCalls:
       m_Calls: []
@@ -301,4 +327,4 @@ MonoBehaviour:
   - {fileID: 4300782672120915085, guid: b3d352b9933aba54cb2dd5f08e75a15d, type: 3}
   - {fileID: 3086877326406797261, guid: 85d383a39f3907846934522481a844b2, type: 3}
   - {fileID: 1543105170257828915, guid: 20527c982e1604d4fbc95a1a16b09ca5, type: 3}
-  - {fileID: 3172348206047893289, guid: 7adad159297554d438882d6c23451f21, type: 3}
+  - {fileID: 4533012105050927083, guid: 045281b34b2627c468fc4743db6b6172, type: 3}

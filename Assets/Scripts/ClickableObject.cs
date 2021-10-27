@@ -10,17 +10,25 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler, IPointerEnte
     [SerializeField] private string node;
     [SerializeField] private bool clickable;
     [SerializeField] private SpriteRenderer glow;
+    [SerializeField] private SpriteRenderer CG;
+    [SerializeField] private Sprite[] switchingSprites;
     private SpriteRenderer img;
-    
+    private int index = 0;
     
     public void OnPointerClick(PointerEventData eventData)
     {
         if (clickable)
         {
             Debug.Log("clicked on object");
-            TransitionManager.Instance.dialogueRunner.StartDialogue(node);
+            if(node != "NoNode")
+                TransitionManager.Instance.dialogueRunner.StartDialogue(node);
             img = GetComponent<SpriteRenderer>();
             clickable = false;
+            glow.enabled = false;
+            if (CG != null)
+            {
+                CG.GetComponent<FadeInCG>().FadeInObject();
+            }
         }
     }
 
@@ -45,6 +53,15 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler, IPointerEnte
     public void FadeInObject()
     {
         StartCoroutine(FadeIn());
+    }
+    [YarnCommand("SwitchSprite")]
+    public void SwitchSprite()
+    {
+        if (switchingSprites.Length > 0)
+        {
+            img.sprite = switchingSprites[index];
+            index++;
+        }
     }
 
     private IEnumerator FadeIn()

@@ -45,14 +45,9 @@ tags:
 colorID: 0
 position: -1220,-772
 ---
-<<FadeInPortrait PortraitDB Sherry p2Neutral>>
-<<StopMusic MusicManager>>I wonder if...
-<<SwitchPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager PumpkinMansBreath>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. 
-I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. 
-I AM VERY GENEROUS ON HALLOWEEN. 
-SO, WHEN I KNOCK, OPEN THE DOOR.
-<<PlayMusic MusicManager Silence>>
-I need to show this letter to the police. Danny might be in danger.
+<<FadeInPortrait PortraitDB Sherry p2Neutral>><<PlayMusic MusicManager PumpkinMansBreath>><<FadeInObject CG>>
+I wonder if...
+<<SwitchPortrait PortraitDB Sherry p2Concern>>I need to show this letter to the police. Danny might be in danger.
 <<FadeOutAllPortraits PortraitDB>>
 <<RoomToRoomTransition TransitionManager LivingRoomNight2 NoDate>>[[LivingRoomNight2]]
 <<FadeOutAllPortraits PortraitDB>>

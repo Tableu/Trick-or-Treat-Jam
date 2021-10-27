@@ -1,7 +1,7 @@
 title: LivingRoomNight2
 tags: 
 colorID: 0
-position: -1810,-939
+position: -1809,-941
 ---
 <<FadeInPortrait PortraitDB Sherry p2Fearful>>Trick or treat.
 Trick or treat~
@@ -42,7 +42,7 @@ position: -902,-990
 <<SwitchPortrait PortraitDB Sherry p2Concern>>It's locked. Oh God.
 <<FadeOutAllPortraits PortraitDB>><<set $door to 1>>
 <<if $lamp is 1>>
-    <<FadeIn EnvelopeAndCandies>>
+    <<LoadRoom TransitionManager LivingRoomFoggedNote>>
 <<endif>>
 ===
 title: LivingRoomFoggedLamp
@@ -53,30 +53,30 @@ position: -1093,-724
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>I guess there's a power outage? How strange.
 <<FadeOutAllPortraits PortraitDB>><<set $lamp to 1>>
 <<if $door is 1>>
-    <<FadeIn EnvelopeAndCandies>>
-<<endif>>
-===
-title: TrickEnvelope
-tags: 
-colorID: 0
-position: -616,-677
----
-<<FadeInPortrait PortraitDB Sherry p2Neutral>>There seems to be something in here.
-<<FadeIn EnvelopeKey>><<PlayMusic MusicManager HelpfulClue2>>What the hell am I supposed to do with this?
-<<FadeOutAllPortraits PortraitDB>><<set $EnvelopeKey to 1>>
-<<if $EnvelopeFinger is 1>>
-    [[DannyScreams]]
+    <<LoadRoom TransitionManager LivingRoomFoggedNote>>
 <<endif>>
 ===
 title: TreatEnvelope
 tags: 
 colorID: 0
+position: -616,-677
+---
+<<FadeInPortrait PortraitDB Sherry p2Neutral>><<SwitchSprite Treat>>There seems to be something in here.
+<<PlayMusic MusicManager HelpfulClue2>><<SwitchSprite Treat>>What the hell am I supposed to do with this?
+<<FadeOutAllPortraits PortraitDB>><<set $EnvelopeKey to 1>>
+<<if $EnvelopeFinger is 1>>
+    [[DannyScreams]]
+<<endif>>
+===
+title: TrickEnvelope
+tags: 
+colorID: 0
 position: -290,-661
 ---
-<<FadeInPortrait PortraitDB Sherry p2Neutral>>What in the world is this...
-<<FadeIn EnvelopeFinger>><<PlayMusic MusicManager HelpfulClue2>><<SwitchPortrait PortraitDB p2Fearful>>Urgh, oh my god. 
+<<FadeInPortrait PortraitDB Sherry p2Neutral>><<SwitchSprite Trick>>What in the world is this...
+<<PlayMusic MusicManager HelpfulClue2>><<SwitchPortrait PortraitDB Sherry p2Fearful>><<SwitchSprite Trick>>Urgh, oh my god. 
 Put it away, put it away-
-<<SwitchPortrait PortraitDB p2Sob>>BLERGH
+<<SwitchPortrait PortraitDB Sherry p2Sob>>BLERGH
 <<FadeOutAllPortraits PortraitDB>><<set $EnvelopeFinger to 1>>
 <<if $EnvelopeKey is 1>>
     [[DannyScreams]]
@@ -85,9 +85,9 @@ Put it away, put it away-
 title: DannyScreams
 tags: 
 colorID: 0
-position: -257,-1035
+position: -257,-1037
 ---
 Mom! Mom!
 <<FadeInPortrait PortraitDB Sherry p2Fearful>>Danny! Danny!
-<<RoomToRoomTransition TransitionManager DannyDoor>>[[DoorOfDannysRoom]]
+<<RoomToRoomTransition TransitionManager DannyDoor NoDate>>[[DoorOfDannysRoom]]
 ===
