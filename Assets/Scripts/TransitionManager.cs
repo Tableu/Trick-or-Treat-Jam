@@ -175,7 +175,7 @@ public class TransitionManager : MonoBehaviour
         if (date != "NoDate")
         {
             text.gameObject.SetActive(true);
-            text.text = date;
+            text.text = date.Replace('_',' ');
             for (float i = 0; i <= 1; i += Time.deltaTime)
             {
                 text.color = new Color(1, 1, 1, i);

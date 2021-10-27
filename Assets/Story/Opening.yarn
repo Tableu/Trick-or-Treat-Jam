@@ -20,7 +20,7 @@ No, no…I already tried finding them near the str-
 title: Danny'sRoom/Night
 tags: 
 colorID: 0
-position: -631,-396
+position: -631,-397
 ---
 <<AnimateSpeaker PortraitDB Sherry>><<FadeInPortrait PortraitDB Sherry p1Concern>><<FadeInPortrait PortraitDB Danny Neutral>><<PlayMusic MusicManager DannysRoom>>...
 Did you want to talk about it?
@@ -38,10 +38,11 @@ Sonny just screamed, “No, no, Nosferatu!” and started dashing away.
 I didn’t know what they meant.
 I saw…you.
 He turned into a shape of you, and you were hurt. You were bleeding.
-<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Fearful>>Danny...
-<<AnimateSpeaker PortraitDB Danny>>When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
-<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>I won't let anythin-
-<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Crying>>I don't want to die. I DON'T WANT TO DIE!!!
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Concern>>Danny...
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Fearful>>When he ate both of them, he let me loose. Said his belly was full for now. Said he would come back for me on Halloween. Mom…
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p1Cry>>I won't let anythin-
+<<AnimateSpeaker PortraitDB Danny>><<SwitchPortrait PortraitDB Danny Fearful>>I don't want to die. I don't want to die.
+<<SwitchPortrait PortraitDB Danny FearfulTear>>I DON'T WANT TO DIE!!!
 <<FadeOutAllPortraits PortraitDB>>
 <<StopMusic MusicManager>><<RoomToRoomTransition TransitionManager DannyRoomMorning October_31st>>[[DannysBedroomEarlyMorning]]
 ===

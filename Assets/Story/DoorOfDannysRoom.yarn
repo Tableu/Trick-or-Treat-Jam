@@ -1,7 +1,7 @@
 title: DoorOfDannysRoom
 tags: 
 colorID: 0
-position: -391,-798
+position: -563,-785
 ---
 <<FadeInPortrait PortraitDB Sherry p2Fearful>>Danny! Are you there??
 <<FadeOutAllPortraits PortraitDB>>
@@ -9,7 +9,7 @@ position: -391,-798
 title: DannyDoorknob
 tags: 
 colorID: 0
-position: -190,-821
+position: -260,-925
 ---
 <<FadeInPortrait PortraitDB Sherry p2Concern>>It won't budge.
 <<SwitchPortrait PortraitDB Sherry p2Fearful>>Why won't it budge?
@@ -33,5 +33,6 @@ He's just a child!
 <<SwitchPortrait PortraitDB Sherry p2ScreamA>>PLEASE LET HIM GO!
 <<SwitchPortrait PortraitDB Sherry p2ScreamB>>PLEASE!
 LET HIM GO!
+<<AnimatePortrait PortraitDB Danny>>Mom...
 <<StopMusic MusicManager>>
 ===

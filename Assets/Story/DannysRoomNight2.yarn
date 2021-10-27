@@ -14,9 +14,10 @@ position: -1562,-989
 title: DannysRoomInvisibleInkPen
 tags: 
 colorID: 8
-position: -1279,-995
+position: -1279,-997
 ---
-<<FadeInPortrait PortraitDB Sherry p2Neutral>>Danny’s invisible ink pen. I remember Jason used to write love letters to me in high school with them so that my father wouldn’t find out. 
+<<FadeInPortrait PortraitDB Sherry p2Neutral>>Danny’s invisible ink pen. 
+I remember Jason used to write love letters to me in high school with them so that my father wouldn’t find out. 
 I remember spending nights reading his letters by secretly burning a candle in my room.
 My father never cared to install a lamp in my room, so I always had to come up with excuses as to why there were so many burned candles lying around.
 <<if $haspaper is 1 and $hascandy is 1>>
@@ -42,11 +43,14 @@ position: -1032,-990
 title: DannysRoomLamp
 tags: 
 colorID: 0
-position: -1708,-693
+position: -1220,-772
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>
 <<StopMusic MusicManager>>I wonder if...
-<<SwitchPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager PumpkinMansBreath>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. I AM VERY GENEROUS ON HALLOWEEN. SO, WHEN I KNOCK, OPEN THE DOOR.
+<<SwitchPortrait PortraitDB Sherry p2Concern>><<PlayMusic MusicManager PumpkinMansBreath>>DANNY'S LAST REQUEST IS THAT HE WANTS YOU TO BE THERE. 
+I WILL CARRY OUT HIS REQUEST BECAUSE TODAY IS HALLOWEEN. 
+I AM VERY GENEROUS ON HALLOWEEN. 
+SO, WHEN I KNOCK, OPEN THE DOOR.
 <<PlayMusic MusicManager Silence>>
 I need to show this letter to the police. Danny might be in danger.
 <<FadeOutAllPortraits PortraitDB>>

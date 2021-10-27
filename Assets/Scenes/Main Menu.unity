@@ -707,6 +707,14 @@ PrefabInstance:
       propertyPath: dialogueTextSoundCaller
       value: 
       objectReference: {fileID: 425781713}
+    - target: {fileID: 653859790, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 653859790, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2646193744331083831, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -750,6 +758,14 @@ PrefabInstance:
     - target: {fileID: 2646193744331083831, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442585169747751276, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442585169747751276, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7069712738937647023, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_Name
@@ -1082,10 +1098,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
-      propertyPath: textSpeed
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: dialogueContainer
       value: 

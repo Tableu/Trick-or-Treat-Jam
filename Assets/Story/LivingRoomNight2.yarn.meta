@@ -8,23 +8,32 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-CA
   stringIDs:
   - LivingRoomNight2-LivingRoomNight2-0
   - LivingRoomNight2-LivingRoomNight2-1
   - LivingRoomNight2-LivingRoomNight2-2
   - LivingRoomNight2-LivingRoomNight2-3
   - LivingRoomNight2-LivingRoomNight2-4
-  - LivingRoomNight2-Trick-5
-  - LivingRoomNight2-Treat-6
+  - LivingRoomNight2-LivingRoomNight2-5
+  - LivingRoomNight2-Trick-6
   - LivingRoomNight2-Treat-7
   - LivingRoomNight2-Treat-8
   - LivingRoomNight2-Treat-9
-  - LivingRoomNight2-LivingRoomFoggedDoor-10
+  - LivingRoomNight2-Treat-10
   - LivingRoomNight2-LivingRoomFoggedDoor-11
-  - LivingRoomNight2-LivingRoomFoggedLamp-12
+  - LivingRoomNight2-LivingRoomFoggedDoor-12
+  - LivingRoomNight2-LivingRoomFoggedLamp-13
+  - LivingRoomNight2-TrickEnvelope-14
+  - LivingRoomNight2-TrickEnvelope-15
+  - LivingRoomNight2-TreatEnvelope-16
+  - LivingRoomNight2-TreatEnvelope-17
+  - LivingRoomNight2-TreatEnvelope-18
+  - LivingRoomNight2-TreatEnvelope-19
+  - LivingRoomNight2-DannyScreams-20
+  - LivingRoomNight2-DannyScreams-21
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: 503862da442b2ff4f910f4005ba87240, type: 3}
   localizations: []

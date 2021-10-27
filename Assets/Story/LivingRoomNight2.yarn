@@ -5,7 +5,8 @@ position: -1810,-939
 ---
 <<FadeInPortrait PortraitDB Sherry p2Fearful>>Trick or treat.
 Trick or treat~
-Danny likes treats. What does his mother like? Tricks...or Treats?
+Danny likes treats. What does his mother like? 
+Tricks...or Treats?
 [[Trick|Trick]]
 [[Treat|Treat]]
 ===
@@ -47,7 +48,7 @@ position: -902,-990
 title: LivingRoomFoggedLamp
 tags: 
 colorID: 0
-position: -1093,-722
+position: -1093,-724
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>I guess there's a power outage? How strange.
 <<FadeOutAllPortraits PortraitDB>><<set $lamp to 1>>
@@ -73,7 +74,8 @@ colorID: 0
 position: -290,-661
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>What in the world is this...
-<<FadeIn EnvelopeFinger>><<PlayMusic MusicManager HelpfulClue2>><<SwitchPortrait PortraitDB p2Fearful>>Urgh, oh my god. Put it away, put it away-
+<<FadeIn EnvelopeFinger>><<PlayMusic MusicManager HelpfulClue2>><<SwitchPortrait PortraitDB p2Fearful>>Urgh, oh my god. 
+Put it away, put it away-
 <<SwitchPortrait PortraitDB p2Sob>>BLERGH
 <<FadeOutAllPortraits PortraitDB>><<set $EnvelopeFinger to 1>>
 <<if $EnvelopeKey is 1>>
