@@ -24,9 +24,11 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler, IPointerEnte
                 TransitionManager.Instance.dialogueRunner.StartDialogue(node);
             img = GetComponent<SpriteRenderer>();
             clickable = false;
-            glow.enabled = false;
+            if(glow != null)
+                glow.enabled = false;
             if (CG != null)
             {
+                CG.gameObject.SetActive(true);
                 CG.GetComponent<FadeInCG>().FadeInObject();
             }
         }
@@ -34,13 +36,13 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler, IPointerEnte
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(clickable)
+        if(clickable && glow!=null)
             glow.enabled = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if(clickable)
+        if(clickable&&glow!=null)
             glow.enabled = false;
     }
 

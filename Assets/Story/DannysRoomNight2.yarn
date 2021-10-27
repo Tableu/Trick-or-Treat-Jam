@@ -47,9 +47,6 @@ position: -1220,-772
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>><<PlayMusic MusicManager PumpkinMansBreath>><<FadeInObject CG>>
 I wonder if...
-<<SwitchPortrait PortraitDB Sherry p2Concern>>I need to show this letter to the police. Danny might be in danger.
-<<FadeOutAllPortraits PortraitDB>>
-<<RoomToRoomTransition TransitionManager LivingRoomNight2 NoDate>>[[LivingRoomNight2]]
 <<FadeOutAllPortraits PortraitDB>>
 ===
 title: DannysRoomNight2
@@ -58,5 +55,15 @@ colorID: 0
 position: -1957,-924
 ---
 <<PlayMusic MusicManager DannyIsGone>><<FadeInPortrait PortraitDB Sherry p2Neutral>>Danny?!
+<<FadeOutAllPortraits PortraitDB>>
+===
+title: DannysRoomEnd
+tags: 
+colorID: 0
+position: -734,-844
+---
+<<FadeInPortrait PortraitDB Sherry p2Concern>>I need to show this letter to the police. Danny might be in danger.
+<<FadeOutAllPortraits PortraitDB>>
+<<RoomToRoomTransition TransitionManager LivingRoomNight2 NoDate>>[[LivingRoomNight2]]
 <<FadeOutAllPortraits PortraitDB>>
 ===
