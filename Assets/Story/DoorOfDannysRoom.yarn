@@ -29,5 +29,6 @@ He's just a child!
 <<SwitchPortrait PortraitDB Sherry p2ScreamB>>PLEASE!
 LET HIM GO!
 <<AnimatePortrait PortraitDB Danny>>Mom...
+<<FadeOutAllPortraits PortraitDB>>
 <<RoomToRoomTransition TransitionManager Credits NoDate>>
 ===
