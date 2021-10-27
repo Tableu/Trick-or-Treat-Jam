@@ -47,10 +47,12 @@ MonoBehaviour:
   soundAudioClipArray:
   - sound: 1
     audioclip: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
-  - sound: 1
-    audioclip: {fileID: 8300000, guid: 0cea1ed81fdb7e543814b33b58333e9d, type: 3}
   - sound: 2
     audioclip: {fileID: 8300000, guid: 2ced46f6bb119d8488c85d6683415288, type: 3}
+  - sound: 3
+    audioclip: {fileID: 8300000, guid: b29f4e27e1ad0564790f9877435e5983, type: 3}
+  - sound: 4
+    audioclip: {fileID: 8300000, guid: 7ce3624eb1431c246a62a95225a31a06, type: 3}
 --- !u!114 &202913520
 MonoBehaviour:
   m_ObjectHideFlags: 0

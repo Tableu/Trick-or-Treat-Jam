@@ -683,7 +683,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1384249, y: 1}
+    m_SensorSize: {x: 1.7785467, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -703,6 +703,10 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 116270634}
+    - target: {fileID: 353063098, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: dialogueTextSoundCaller
+      value: 
+      objectReference: {fileID: 425781713}
     - target: {fileID: 2646193744331083831, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1078,6 +1082,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: dialogueContainer
       value: 

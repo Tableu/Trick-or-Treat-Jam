@@ -36,6 +36,10 @@ public class PortraitDB : MonoBehaviour
    {
       return characters[(int) charID].characterSpriteRenderer;
    }
+   public AudioManager.Sound GetDialogueSound(Character charID)
+   {
+      return characters[(int) charID].dialogueSound;
+   }
 }
 
 public enum Character
@@ -48,6 +52,7 @@ public enum Character
 public class CharacterExpressions
 {
    public Character charID;
+   public AudioManager.Sound dialogueSound;
    public SpriteRenderer characterSpriteRenderer;
    public List<Expression> expressions;
 

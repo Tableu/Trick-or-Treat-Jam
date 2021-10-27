@@ -11,6 +11,7 @@ public class PortraitController : MonoBehaviour
 {
     [SerializeField] private DialogueRunner dialogueRunner;
     [SerializeField] private Color fadedColor;
+    [SerializeField] private DialogueTextSoundCaller dialogueTextSoundCaller;
     
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,8 @@ public class PortraitController : MonoBehaviour
             SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
             img.color = new Color(1, 1, 1, 1);
             img.size = new Vector2(1.1f, 1.1f);
+
+            dialogueTextSoundCaller.dialogueSound = PortraitDB.Instance.GetDialogueSound(charEnum);
         }
     }
     [YarnCommand("SwitchPortrait")]

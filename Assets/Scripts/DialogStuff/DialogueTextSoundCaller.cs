@@ -6,6 +6,8 @@ public class DialogueTextSoundCaller : MonoBehaviour
 {
     [SerializeField]
     string _dialogueText;
+
+    public AudioManager.Sound dialogueSound = AudioManager.Sound.sherryDialogue;
     public string DialogueText
     {
         get { return _dialogueText; }
@@ -16,7 +18,7 @@ public class DialogueTextSoundCaller : MonoBehaviour
             if (!string.IsNullOrWhiteSpace(charAdded))
             {
                 //Call sound stuff let's gooooo!
-                AudioManager.PlaySound(AudioManager.Sound.sherryDialogue.ToString());
+                AudioManager.PlaySound(dialogueSound.ToString());
             }
         }
     }

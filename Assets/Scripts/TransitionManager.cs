@@ -131,7 +131,7 @@ public class TransitionManager : MonoBehaviour
         }));
         StartCoroutine(BlackFadeIn(img,delegate
         {
-            _room = GameObject.Find("TestRoom");
+            _room = GameObject.Find("LivingRoomNight");
             dialogueRunner.StartDialogue();
         }));
     }
