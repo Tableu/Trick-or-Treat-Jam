@@ -46,7 +46,8 @@ public enum Character
 {
    Sherry,
    Danny,
-   Policeman
+   Policeman,
+   Voice
 }
 [System.Serializable]
 public class CharacterExpressions

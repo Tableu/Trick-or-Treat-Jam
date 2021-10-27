@@ -7,14 +7,14 @@ position: -1562,-989
 <<if $hasinvisibleinkpen is 1 and $hascandy is 1>>
     <<StopMusic MusicManager>><<wait 1>>
     <<PlayMusic MusicManager TerrifyingClue>>
-    <<SetObjectClickable Lamp>>
+    [[DannysRoomLamp]]
 <<endif>>
 <<FadeOutAllPortraits PortraitDB>><<set $haspaper to 1>>
 ===
 title: DannysRoomInvisibleInkPen
 tags: 
 colorID: 8
-position: -1279,-997
+position: -1202,-1060
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>Danny’s invisible ink pen. 
 I remember Jason used to write love letters to me in high school with them so that my father wouldn’t find out. 
@@ -23,31 +23,31 @@ My father never cared to install a lamp in my room, so I always had to come up w
 <<if $haspaper is 1 and $hascandy is 1>>
     <<StopMusic MusicManager>><<wait 1>>
     <<PlayMusic MusicManager TerrifyingClue>>
-    <<SetObjectClickable Lamp>>
+    [[DannysRoomLamp]]
 <<endif>>
 <<FadeOutAllPortraits PortraitDB>><<set $hasinvisibleinkpen to 1>>
 ===
 title: DannysRoomCandy
 tags: 
 colorID: 0
-position: -1032,-990
+position: -894,-1073
 ---
 <<FadeInPortrait PortraitDB Sherry p2Neutral>>What is this strawberry flavored candy doing here? Danny hates them.
 <<if $hasinvisibleinkpen is 1 and $haspaper is 1>>
     <<StopMusic MusicManager>><<wait 1>>
     <<PlayMusic MusicManager TerrifyingClue>>
-    <<SetObjectClickable Lamp>>
+    [[DannysRoomLamp]]
 <<endif>>
 <<FadeOutAllPortraits PortraitDB>><<set $hascandy to 1>>
 ===
 title: DannysRoomLamp
 tags: 
 colorID: 0
-position: -1220,-772
+position: -1223,-774
 ---
-<<FadeInPortrait PortraitDB Sherry p2Neutral>><<PlayMusic MusicManager PumpkinMansBreath>><<FadeInObject CG>>
+<<FadeInPortrait PortraitDB Sherry p2Neutral>>
 I wonder if...
-<<FadeOutAllPortraits PortraitDB>>
+<<FadeOutAllPortraits PortraitDB>><<FadeInObject CG>><<PlayMusic MusicManager PumpkinMansBreath>>
 ===
 title: DannysRoomNight2
 tags: 
@@ -60,7 +60,7 @@ position: -1957,-924
 title: DannysRoomEnd
 tags: 
 colorID: 0
-position: -734,-844
+position: -945,-768
 ---
 <<FadeInPortrait PortraitDB Sherry p2Concern>>I need to show this letter to the police. Danny might be in danger.
 <<FadeOutAllPortraits PortraitDB>>

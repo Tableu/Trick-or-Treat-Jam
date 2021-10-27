@@ -31,7 +31,8 @@ public class TransitionManager : MonoBehaviour
         LivingRoomNight2,
         LivingRoomFogged,
         LivingRoomFoggedNote,
-        DannyDoor
+        DannyDoor,
+        Credits
     }
 
     private static TransitionManager _instance;

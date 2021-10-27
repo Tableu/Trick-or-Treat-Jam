@@ -14,16 +14,11 @@ position: -260,-925
 <<FadeInPortrait PortraitDB Sherry p2Concern>>It won't budge.
 <<SwitchPortrait PortraitDB Sherry p2Fearful>>Why won't it budge?
 <<SwitchPortrait PortraitDB Sherry p2ScreamA>>It wasn't locked before!
-<<FadeOutAllPortraits PortraitDB>>
-===
-title: DannyDoorKeyhole
-tags: 
-colorID: 0
-position: -47,-694
----
-Mom!
+<<SwitchSprite SherryEye>>
+<<AnimatePortrait PortraitDB Danny>>Mom!
 <<FadeInPortrait PortraitDB Sherry p2Cry>>Danny! I'm going to be right there
 <<StopMusic MusicManager>><<SwitchPortrait PortraitDB Sherry p2Fearful>>No.
+<<SwitchSprite SherryEye>>
 <<SwitchPortrait PortraitDB Sherry p2Sob>>NO.
 <<SwitchPortrait PortraitDB Sherry p2ScreamA>>NO!!
 <<PlayMusic MusicManager PumpkinManSpeaks>><<SwitchPortrait PortraitDB Sherry p2Sob>>Please, let him go.
@@ -34,5 +29,5 @@ He's just a child!
 <<SwitchPortrait PortraitDB Sherry p2ScreamB>>PLEASE!
 LET HIM GO!
 <<AnimatePortrait PortraitDB Danny>>Mom...
-<<StopMusic MusicManager>>
+<<RoomToRoomTransition TransitionManager Credits NoDate>>
 ===

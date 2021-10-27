@@ -40,7 +40,7 @@ public class PortraitController : MonoBehaviour
                 spriteRenderer.size = new Vector2(1, 1);
             }
             SpriteRenderer img = PortraitDB.Instance.GetSpriteRenderer(charEnum);
-            img.color = new Color(1, 1, 1, 1);
+            img.color = new Color(1, 1, 1, img.color.a);
             img.size = new Vector2(1.1f, 1.1f);
 
             dialogueTextSoundCaller.dialogueSound = PortraitDB.Instance.GetDialogueSound(charEnum);

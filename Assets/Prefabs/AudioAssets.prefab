@@ -53,6 +53,8 @@ MonoBehaviour:
     audioclip: {fileID: 8300000, guid: b29f4e27e1ad0564790f9877435e5983, type: 3}
   - sound: 4
     audioclip: {fileID: 8300000, guid: 7ce3624eb1431c246a62a95225a31a06, type: 3}
+  - sound: 5
+    audioclip: {fileID: 8300000, guid: e1731d17e6ecbbc438b4d5e0bc975e1d, type: 3}
 --- !u!114 &202913520
 MonoBehaviour:
   m_ObjectHideFlags: 0

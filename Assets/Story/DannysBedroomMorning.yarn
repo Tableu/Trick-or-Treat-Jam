@@ -103,9 +103,10 @@ You just had to go and shoot yourself in the head, didn’t you? Were we troubli
 <<SwitchPortrait PortraitDB Sherry p2ScreamA>>WHY DID YOU HAVE TO LEAVE ME ALONE LIKE THIS?!
 <<SwitchPortrait PortraitDB Sherry p2Cry>>You should have at least left a letter…but no. I hope you are enjoying my agony from hell...YOU FUCKING COWARD!!!
 <<SwitchPortrait PortraitDB Sherry p2Concern>>Urgh... I'm sorry...
-<<PlayMusic MusicManager Silence>><<FadeOutAllPortraits PortraitDB>>
+<<PlayMusic MusicManager Silence>>
 <<wait 2>>
-<<PlayMusic MusicManager DannysAgony>><<FadeInPortrait PortraitDB Sherry p2Neutral>>What was that? Danny?! Danny... Is that you?
+<<PlayMusic MusicManager DannysAgony>><<SwitchPortrait PortraitDB Sherry p2Neutral>><<AnimateSpeaker PortraitDB Danny>>Mom! Help!
+<<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Concern>>What was that? Danny?! Danny... Is that you?
 <<FadeOutAllPortraits PortraitDB>>
 <<RoomToRoomTransition TransitionManager DannyRoomNight2 NoDate>>[[DannysRoomNight2]]
 ===

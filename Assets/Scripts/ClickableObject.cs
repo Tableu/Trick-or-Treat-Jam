@@ -61,6 +61,7 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler, IPointerEnte
     {
         if (switchingSprites.Length > 0)
         {
+            img = GetComponent<SpriteRenderer>();
             img.sprite = switchingSprites[index];
             index++;
         }

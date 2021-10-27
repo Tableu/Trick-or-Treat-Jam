@@ -1,9 +1,10 @@
 title: LivingRoomNight2
 tags: 
 colorID: 0
-position: -1809,-941
+position: -1810,-942
 ---
-<<FadeInPortrait PortraitDB Sherry p2Fearful>>Trick or treat.
+<<AnimateSpeaker PortraitDB Voice>><<FadeInPortrait PortraitDB Sherry p2Fearful>>Knock, knock, knock
+Trick or treat.
 Trick or treat~
 Danny likes treats. What does his mother like? 
 Tricks...or Treats?
@@ -13,12 +14,12 @@ Tricks...or Treats?
 title: Trick
 tags: 
 colorID: 0
-position: -1286,-971
+position: -1286,-972
 ---
 <<if $treat is null>>
     <<set $trick to 1>>
 <<endif>>
-<<LoadRoom TransitionManager LivingRoomFogged>><<SwitchPortrait PortraitDB Sherry p2Concern>>Wh'what? The lights turned off.
+<<LoadRoom TransitionManager LivingRoomFogged>><<AnimateSpeaker PortraitDB Sherry>><<SwitchPortrait PortraitDB Sherry p2Concern>>Wh'what? The lights turned off.
 <<FadeOutAllPortraits PortraitDB>>
 ===
 title: Treat
@@ -87,7 +88,8 @@ tags:
 colorID: 0
 position: -257,-1037
 ---
-Mom! Mom!
-<<FadeInPortrait PortraitDB Sherry p2Fearful>>Danny! Danny!
-<<RoomToRoomTransition TransitionManager DannyDoor NoDate>>[[DoorOfDannysRoom]]
+<<FadeInPortrait PortraitDB Sherry p2Fearful>>
+<<AnimateSpeaker PortraitDB Danny>>Mom! Mom!
+<<AnimateSpeaker PortraitDB Sherry>>Danny! Danny!
+<<FadeOutAllPortraits PortraitDB>><<RoomToRoomTransition TransitionManager DannyDoor NoDate>>[[DoorOfDannysRoom]]
 ===

@@ -22,6 +22,9 @@ public class FadeInCG : MonoBehaviour
     [YarnCommand("FadeInObject")]
     public void FadeInObject()
     {
+        var boxCollider = GetComponent<BoxCollider2D>();
+        if (boxCollider != null)
+            boxCollider.enabled = true;
         StartCoroutine(FadeIn());
     }
 

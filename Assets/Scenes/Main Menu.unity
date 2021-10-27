@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!212 &86831718 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4493399299724869581, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+  m_PrefabInstance: {fileID: 1153762333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &116270633 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6656845474792410614, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
@@ -401,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6298887341678294247, guid: 518cc3591c806994a88e363780f72c44, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6821534443824085785, guid: 518cc3591c806994a88e363780f72c44, type: 3}
       propertyPath: m_RootOrder
@@ -842,6 +847,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].charID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].dialogueSound
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].characterSpriteRenderer
+      value: 
+      objectReference: {fileID: 86831718}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.data[0].id
+      value: Neutral
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.data[1].id
+      value: Concern
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.data[2].id
+      value: Speaking
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b833b5d2e55186049bae477891af32b0, type: 3}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5fe0a57fae4284946bc8ef39d2e0cefd, type: 3}
+    - target: {fileID: 4503278382060673123, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
+      propertyPath: characters.Array.data[3].expressions.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5e51e8b6101d2241b3a5606da9c44fb, type: 3}
     - target: {fileID: 5442585169747751276, guid: f7c013be723510b40b0a532dfeb9e52d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.07
@@ -1293,6 +1342,14 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 425781711}
+    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
+      propertyPath: roomPrefabs.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656845475574131792, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
+      propertyPath: roomPrefabs.Array.data[9]
+      value: 
+      objectReference: {fileID: 8187238521667554699, guid: 7af8d28b7bf198549bc092f19d0dddca, type: 3}
     - target: {fileID: 6656845475574131793, guid: cda824c308cd1eb49a18f6cd3ae2e583, type: 3}
       propertyPath: m_Name
       value: TransitionManager

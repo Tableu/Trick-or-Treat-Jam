@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
         sherryDialogue,
         policeDialogue,
         dannyDialogue,
+        voiceDialogue
     }
 
     //Clears any nonexistant audio sources
